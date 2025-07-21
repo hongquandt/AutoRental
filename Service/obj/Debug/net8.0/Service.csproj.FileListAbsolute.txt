@@ -1,0 +1,17 @@
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\Service.deps.json
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\Service.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\Service.pdb
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\BusinessObjects.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\BusinessObjects.pdb
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\refint\Service.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.pdb
+D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\ref\Service.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\Repositories.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\Repositories.pdb

@@ -1,0 +1,30 @@
+<Window x:Class="AutoRental.BookingHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AutoRental"
+        Title="Lịch sử đặt xe" Height="500" Width="900" Background="#f4f6fb" FontFamily="Segoe UI" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local:StatusToCancelVisibilityConverter x:Key="StatusToCancelVisibility"/>
+    </Window.Resources>
+    <Grid>
+        <Border Background="White" CornerRadius="14" Padding="24" Margin="20">
+            <StackPanel>
+                <TextBlock Text="Lịch sử đặt xe" FontSize="26" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,18" HorizontalAlignment="Center"/>
+                <DataGrid ItemsSource="{Binding Bookings}" SelectedItem="{Binding SelectedBooking, Mode=TwoWay}" AutoGenerateColumns="False" Height="350" Margin="0,0,0,10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã đặt" Binding="{Binding BookingCode}" Width="100"/>
+                        <DataGridTextColumn Header="Tên xe" Binding="{Binding Car.CarModel}" Width="*"/>
+                        <DataGridTextColumn Header="Biển số" Binding="{Binding Car.LicensePlate}" Width="120"/>
+                        <DataGridTextColumn Header="Ngày nhận" Binding="{Binding PickupDateTime, StringFormat=dd/MM/yyyy}" Width="110"/>
+                        <DataGridTextColumn Header="Ngày trả" Binding="{Binding ReturnDateTime, StringFormat=dd/MM/yyyy}" Width="110"/>
+                        <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalAmount, StringFormat=N0}" Width="120"/>
+                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Huỷ booking" Width="120" Height="36" Margin="0,10,0,0"
+                        Click="BtnCancelBooking_Click"
+                        IsEnabled="{Binding SelectedBooking, Converter={StaticResource StatusToCancelVisibility}}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window> 

@@ -1,0 +1,14 @@
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\bin\Debug\net8.0\BusinessObjects.deps.json
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\bin\Debug\net8.0\BusinessObjects.runtimeconfig.json
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\bin\Debug\net8.0\BusinessObjects.dll
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\bin\Debug\net8.0\BusinessObjects.pdb
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.csproj.AssemblyReference.cache
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.AssemblyInfoInputs.cache
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.AssemblyInfo.cs
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.csproj.CoreCompileInputs.cache
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.dll
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\refint\BusinessObjects.dll
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.pdb
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.genruntimeconfig.cache
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\ref\BusinessObjects.dll
