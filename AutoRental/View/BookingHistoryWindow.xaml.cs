@@ -2,6 +2,7 @@ using System.Windows;
 using BusinessObjects;
 using AutoRental.ViewModels;
 using System.Windows.Controls;
+using System;
 
 namespace AutoRental
 {
@@ -37,24 +38,38 @@ namespace AutoRental
 
         private void BtnCancelBooking_Click(object sender, RoutedEventArgs e)
         {
+            // Kiểm tra đã chọn booking chưa
             if (_viewModel.SelectedBooking == null)
             {
                 MessageBox.Show("Vui lòng chọn một booking để huỷ!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
             }
-            
+
+            // Kiểm tra trạng thái booking
             if (_viewModel.SelectedBooking.Status != "Confirmed")
             {
                 MessageBox.Show("Chỉ có thể huỷ những booking có trạng thái 'Confirmed'!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (MessageBox.Show($"Bạn có chắc muốn huỷ đặt xe {_viewModel.SelectedBooking.Car.CarModel} ({_viewModel.SelectedBooking.BookingCode})?", 
-                "Xác nhận huỷ đặt xe", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            // Xác nhận huỷ - kiểm tra Car có null không
+            string message;
+            if (_viewModel.SelectedBooking.Car == null)
             {
+                message = $"Bạn có chắc muốn huỷ đặt xe (Mã: {_viewModel.SelectedBooking.BookingCode})?";
+            }
+            else
+            {
+                message = $"Bạn có chắc muốn huỷ đặt xe {_viewModel.SelectedBooking.Car.CarModel} ({_viewModel.SelectedBooking.BookingCode})?";
+            }
+
+            if (MessageBox.Show(message, "Xác nhận huỷ đặt xe", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                // Gọi hàm huỷ booking
                 _viewModel.CancelSelected();
+                
+                // Thông báo và cập nhật UI
                 MessageBox.Show("Đã huỷ đặt xe thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Cập nhật lại danh sách từ database để đảm bảo dữ liệu mới nhất
                 _viewModel.LoadByUser(_user.UserId);
                 UpdateCancelButtonState();
             }

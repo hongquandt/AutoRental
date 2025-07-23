@@ -44,7 +44,16 @@ namespace AutoRental.ViewModels
 
         public void LoadByUser(int userId)
         {
-            Bookings = new ObservableCollection<Booking>(_service.GetByUser(userId));
+            var bookings = _service.GetByUser(userId);
+            foreach (var booking in bookings)
+            {
+                if (booking.Car == null)
+                {
+                    // Nếu Car null, load lại từ service
+                    booking.Car = _service.GetById(booking.BookingId)?.Car;
+                }
+            }
+            Bookings = new ObservableCollection<Booking>(bookings);
         }
 
         public void Search(string keyword)
@@ -52,15 +61,24 @@ namespace AutoRental.ViewModels
             Bookings = new ObservableCollection<Booking>(_service.Search(keyword));
         }
 
-        public void CancelSelected()
+        public bool CancelSelected()
         {
-            if (SelectedBooking != null && SelectedBooking.Status == "Confirmed")
+            try
             {
-                _service.Cancel(SelectedBooking.BookingId);
-                // Cập nhật trạng thái của booking đã chọn
-                SelectedBooking.Status = "Cancelled";
-                // Thông báo UI cập nhật
-                OnPropertyChanged(nameof(SelectedBooking));
+                if (SelectedBooking != null && SelectedBooking.Status == "Confirmed")
+                {
+                    _service.Cancel(SelectedBooking.BookingId);
+                    // Cập nhật trạng thái của booking đã chọn
+                    SelectedBooking.Status = "Cancelled";
+                    // Thông báo UI cập nhật
+                    OnPropertyChanged(nameof(SelectedBooking));
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
             }
         }
 

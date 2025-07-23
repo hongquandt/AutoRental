@@ -9,7 +9,6 @@
       "Service/1.0.0": {
         "dependencies": {
           "DataAccessObject": "1.0.0",
-          "DataAccessObjects": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
         },
