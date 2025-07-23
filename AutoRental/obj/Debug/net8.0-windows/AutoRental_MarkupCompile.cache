@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\App.xaml
-7-1176468974
+8198392571
 
-141185536196
+151820556963
 237-1327217725
-MainWindow.xaml;View\AdminWindow.xaml;View\BookingHistoryWindow.xaml;View\CarBookingWindow.xaml;View\CarListWindow.xaml;View\LoginWindow.xaml;View\RegisterWindow.xaml;
+MainWindow.xaml;View\AdminWindow.xaml;View\BookingHistoryWindow.xaml;View\CarBookingWindow.xaml;View\CarListWindow.xaml;View\LoginWindow.xaml;View\RegisterWindow.xaml;View\UserProfileWindow.xaml;
 
 False
 

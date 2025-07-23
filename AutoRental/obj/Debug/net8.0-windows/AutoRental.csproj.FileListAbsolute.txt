@@ -89,3 +89,6 @@ D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Regist
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\BookingHistoryWindow.baml
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\LoginWindow.baml
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\RegisterWindow.baml
+D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\UserProfileWindow.baml
+D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\UserProfileWindow.g.cs
+D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\AutoRental.sourcelink.json

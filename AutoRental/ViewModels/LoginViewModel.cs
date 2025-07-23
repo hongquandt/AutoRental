@@ -34,7 +34,7 @@ namespace AutoRental.ViewModels
         }
 
         public User? Authenticate()
-        {
+        {     
             ErrorMessage = string.Empty;
             if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
             {

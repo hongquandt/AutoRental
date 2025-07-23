@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using AutoRental.View;
 using BusinessObjects;
 
 namespace AutoRental
@@ -34,6 +35,12 @@ namespace AutoRental
         {
             var historyWindow = new BookingHistoryWindow(_currentUser);
             historyWindow.ShowDialog();
+        }
+
+        private void btnViewProfile_Click(object sender, RoutedEventArgs e)
+        {
+            var profileWindow = new UserProfileWindow(_currentUser);
+            profileWindow.ShowDialog();
         }
     }
 }

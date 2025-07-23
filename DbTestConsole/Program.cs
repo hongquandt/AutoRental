@@ -2,6 +2,9 @@
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using System.IO;
+using BusinessObjects;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 class Program
 {
@@ -10,7 +13,31 @@ class Program
         Console.WriteLine("Đang kiểm tra kết nối database...");
         bool ok = TestConnection();
         Console.WriteLine(ok ? "Kết nối thành công!" : "Kết nối thất bại!");
-        Console.WriteLine("Nhấn phím bất kỳ để thoát...");
+        
+        if (ok)
+        {
+            Console.Write("Nhập email người dùng để lấy thông tin: ");
+            string email = Console.ReadLine();
+            var user = GetUserProfile(email);
+            
+            if (user != null)
+            {
+                Console.WriteLine("\n--- THÔNG TIN NGƯỜI DÙNG ---");
+                Console.WriteLine($"ID: {user.UserId}");
+                Console.WriteLine($"Tên đăng nhập: {user.Username}");
+                Console.WriteLine($"Họ tên: {user.FullName}");
+                Console.WriteLine($"Email: {user.Email}");
+                Console.WriteLine($"Số điện thoại: {user.PhoneNumber ?? "Không có"}");
+                Console.WriteLine($"Vai trò: {user.Role.RoleName}");
+                Console.WriteLine($"Ngày tạo: {user.CreatedDate:dd/MM/yyyy HH:mm:ss}");
+            }
+            else
+            {
+                Console.WriteLine("Không tìm thấy người dùng với email này!");
+            }
+        }
+        
+        Console.WriteLine("\nNhấn phím bất kỳ để thoát...");
         Console.ReadKey();
     }
 
@@ -33,6 +60,22 @@ class Program
         {
             Console.WriteLine($"Lỗi: {ex.Message}");
             return false;
+        }
+    }
+    
+    static User GetUserProfile(string email)
+    {
+        try
+        {
+            var context = new AutoRentalPrnContext();
+            return context.Users
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.Email == email);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Lỗi khi lấy thông tin người dùng: {ex.Message}");
+            return null;
         }
     }
 }
