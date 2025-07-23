@@ -72,8 +72,6 @@ D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\refint\Auto
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\AutoRental.pdb
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\AutoRental.genruntimeconfig.cache
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\ref\AutoRental.dll
-D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\bin\Debug\net8.0-windows\Repositories.dll
-D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\bin\Debug\net8.0-windows\Repositories.pdb
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\bin\Debug\net8.0-windows\appsettings.json
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\AutoRental_MarkupCompile.lref
@@ -92,3 +90,5 @@ D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Regist
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\UserProfileWindow.baml
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\UserProfileWindow.g.cs
 D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\obj\Debug\net8.0-windows\AutoRental.sourcelink.json
+D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\bin\Debug\net8.0-windows\DataAccessObjects.dll
+D:\Ky5\prn211\INCLASS\AutoRental\AutoRental\bin\Debug\net8.0-windows\DataAccessObjects.pdb

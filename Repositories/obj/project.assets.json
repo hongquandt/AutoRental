@@ -3114,9 +3114,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories.csproj",
-      "projectName": "Repositories",
-      "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\DataAccessObjects.csproj",
+      "projectName": "DataAccessObjects",
+      "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\DataAccessObjects.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\obj\\",
       "projectStyle": "PackageReference",

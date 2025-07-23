@@ -12,3 +12,4 @@ D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\refint\Business
 D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.pdb
 D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.genruntimeconfig.cache
 D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\ref\BusinessObjects.dll
+D:\Ky5\prn211\INCLASS\AutoRental\BusinessObject\obj\Debug\net8.0\BusinessObjects.sourcelink.json

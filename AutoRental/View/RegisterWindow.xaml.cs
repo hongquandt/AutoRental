@@ -1,8 +1,8 @@
 using System.Windows;
 using System.Windows.Input;
 using AutoRental.ViewModels;
-using Repositories.Implementations;
-using Repositories.Interfaces;
+using DataAccessObjects.Repositories.Interfaces;
+using DataAccessObjects.Repositories.Implementations;
 
 namespace AutoRental
 {

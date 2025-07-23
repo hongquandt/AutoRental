@@ -3,9 +3,8 @@ using System.Windows.Input;
 using AutoRental.ViewModels;
 using Service.Implementations;
 using Service.Interfaces;
-using Repositories.Implementations;
-using Repositories.Interfaces;
-using BusinessObjects;
+using DataAccessObjects.Repositories.Implementations;
+using DataAccessObjects.Repositories.Interfaces;
 
 namespace AutoRental
 {

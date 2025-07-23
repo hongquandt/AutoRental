@@ -2,6 +2,7 @@ using System.Windows;
 using BusinessObjects;
 using System.Linq;
 using System.Collections.Generic;
+using DataAccessObjects.Context;
 
 namespace AutoRental
 {

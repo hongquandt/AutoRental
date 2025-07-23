@@ -2,9 +2,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Service.Interfaces;
 using BusinessObjects;
-using Repositories.Interfaces;
 using System.Text.RegularExpressions;
-
+using DataAccessObjects.Repositories.Interfaces;
+using DataAccessObjects.Context;
 namespace AutoRental.ViewModels
 {
     public class RegisterViewModel : INotifyPropertyChanged

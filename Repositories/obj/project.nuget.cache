@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lfa4PPS6Db4=",
+  "dgSpecHash": "Aa+LumRT8U0=",
   "success": true,
-  "projectFilePath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories.csproj",
+  "projectFilePath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\DataAccessObjects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

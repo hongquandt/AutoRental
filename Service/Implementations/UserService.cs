@@ -1,7 +1,7 @@
 using BusinessObjects;
 using Service.Interfaces;
-using Repositories.Interfaces;
-using Repositories.Implementations;
+using DataAccessObjects.Repositories.Interfaces;
+using DataAccessObjects.Repositories.Implementations;
 
 namespace Service.Implementations
 {

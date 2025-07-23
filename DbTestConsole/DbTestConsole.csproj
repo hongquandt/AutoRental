@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BusinessObject\BusinessObjects.csproj" />
+    <ProjectReference Include="..\Repositories\DataAccessObjects.csproj" />
   </ItemGroup>
 
   <ItemGroup>

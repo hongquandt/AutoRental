@@ -1141,26 +1141,26 @@
           "bin/placeholder/BusinessObjects.dll": {}
         }
       },
-      "Repositories/1.0.0": {
+      "DataAccessObjects/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BusinessObjects": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Repositories.dll": {}
+          "bin/placeholder/DataAccessObjects.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Repositories.dll": {}
+          "bin/placeholder/DataAccessObjects.dll": {}
         }
       },
       "Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "DataAccessObjects": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
-          "Repositories": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
         },
         "compile": {
           "bin/placeholder/Service.dll": {}
@@ -3129,10 +3129,10 @@
       "path": "../BusinessObject/BusinessObjects.csproj",
       "msbuildProject": "../BusinessObject/BusinessObjects.csproj"
     },
-    "Repositories/1.0.0": {
+    "DataAccessObjects/1.0.0": {
       "type": "project",
-      "path": "../Repositories/Repositories.csproj",
-      "msbuildProject": "../Repositories/Repositories.csproj"
+      "path": "../Repositories/DataAccessObjects.csproj",
+      "msbuildProject": "../Repositories/DataAccessObjects.csproj"
     },
     "Service/1.0.0": {
       "type": "project",
@@ -3142,7 +3142,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "BusinessObjects >= 1.0.0",
       "Service >= 1.0.0"
     ]
   },
@@ -3178,9 +3177,6 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {
-              "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\BusinessObject\\BusinessObjects.csproj"
-            },
             "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj": {
               "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj"
             }
