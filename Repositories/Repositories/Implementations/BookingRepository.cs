@@ -3,6 +3,7 @@ using DataAccessObjects.Repositories.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using DataAccessObjects.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessObjects.Repositories.Implementations
 {
@@ -14,11 +15,23 @@ namespace DataAccessObjects.Repositories.Implementations
             _context = new AutoRentalPrnContext();
         }
 
-        public IEnumerable<Booking> GetAll() => _context.Bookings.OrderByDescending(b => b.CreatedDate).ToList();
+        public IEnumerable<Booking> GetAll() => 
+            _context.Bookings
+            .Include(b => b.Car)
+            .OrderByDescending(b => b.CreatedDate)
+            .ToList();
 
-        public IEnumerable<Booking> GetByUser(int userId) => _context.Bookings.Where(b => b.UserId == userId).OrderByDescending(b => b.CreatedDate).ToList();
+        public IEnumerable<Booking> GetByUser(int userId) => 
+            _context.Bookings
+            .Include(b => b.Car)
+            .Where(b => b.UserId == userId)
+            .OrderByDescending(b => b.CreatedDate)
+            .ToList();
 
-        public Booking? GetById(int bookingId) => _context.Bookings.FirstOrDefault(b => b.BookingId == bookingId);
+        public Booking? GetById(int bookingId) => 
+            _context.Bookings
+            .Include(b => b.Car)
+            .FirstOrDefault(b => b.BookingId == bookingId);
 
         public void Add(Booking booking)
         {
@@ -40,10 +53,12 @@ namespace DataAccessObjects.Repositories.Implementations
 
         public IEnumerable<Booking> Search(string keyword)
         {
-            var query = _context.Bookings.AsQueryable();
+            var query = _context.Bookings.Include(b => b.Car).AsQueryable();
             if (!string.IsNullOrWhiteSpace(keyword))
             {
-                query = query.Where(b => b.BookingCode.Contains(keyword) || b.Car.CarModel.Contains(keyword) || b.Car.LicensePlate.Contains(keyword));
+                query = query.Where(b => b.BookingCode.Contains(keyword) || 
+                                         b.Car.CarModel.Contains(keyword) || 
+                                         b.Car.LicensePlate.Contains(keyword));
             }
             return query.OrderByDescending(b => b.CreatedDate).ToList();
         }

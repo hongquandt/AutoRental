@@ -2,6 +2,7 @@ using BusinessObjects;
 using DataAccessObjects.Repositories.Interfaces;
 using System.Linq;
 using DataAccessObjects.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessObjects.Repositories.Implementations
 {
@@ -16,12 +17,16 @@ namespace DataAccessObjects.Repositories.Implementations
 
         public User? GetUserByEmailAndPassword(string email, string password)
         {
-            return _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            return _context.Users
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.Email == email && u.Password == password);
         }
 
         public User? GetUserByEmail(string email)
         {
-            return _context.Users.FirstOrDefault(u => u.Email == email);
+            return _context.Users
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.Email == email);
         }
     }
 } 

@@ -100,11 +100,6 @@ public partial class AutoRentalPrnContext : DbContext
                 .HasMaxLength(20)
                 .IsUnicode(false)
                 .HasDefaultValue("Available");
-
-            entity.HasOne(d => d.Brand).WithMany(p => p.Cars)
-                .HasForeignKey(d => d.BrandId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Car_BrandId");
         });
 
         modelBuilder.Entity<CarBrand>(entity =>
@@ -113,28 +108,33 @@ public partial class AutoRentalPrnContext : DbContext
 
             entity.ToTable("CarBrand");
 
-            entity.HasIndex(e => e.BrandName, "UQ__CarBrand__2206CE9B6D7503FA").IsUnique();
-
-            entity.Property(e => e.BrandName).HasMaxLength(100);
+            entity.Property(e => e.BrandName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<CarImage>(entity =>
         {
             entity.HasKey(e => e.ImageId);
 
+            entity.ToTable("CarImage");
+
             entity.Property(e => e.ImageUrl).HasMaxLength(255);
 
             entity.HasOne(d => d.Car).WithMany(p => p.CarImages)
                 .HasForeignKey(d => d.CarId)
-                .HasConstraintName("FK_CarImages_CarId");
+                .HasConstraintName("FK_CarImage_Car");
         });
 
         modelBuilder.Entity<Discount>(entity =>
         {
             entity.ToTable("Discount");
 
-            entity.Property(e => e.DiscountName).HasMaxLength(100);
-            entity.Property(e => e.DiscountValue).HasColumnType("decimal(5, 2)");
+            entity.Property(e => e.Code).HasMaxLength(20);
+            entity.Property(e => e.Description).HasMaxLength(200);
+            entity.Property(e => e.DiscountPercent).HasColumnType("decimal(5, 2)");
+            entity.Property(e => e.Status)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasDefaultValue("Active");
         });
 
         modelBuilder.Entity<Payment>(entity =>
@@ -144,8 +144,9 @@ public partial class AutoRentalPrnContext : DbContext
             entity.Property(e => e.Amount).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.CreatedDate).HasDefaultValueSql("(getdate())");
             entity.Property(e => e.PaymentMethod).HasMaxLength(50);
-            entity.Property(e => e.PaymentStatus)
+            entity.Property(e => e.Status)
                 .HasMaxLength(20)
+                .IsUnicode(false)
                 .HasDefaultValue("Pending");
 
             entity.HasOne(d => d.Booking).WithMany(p => p.Payments)
@@ -155,29 +156,24 @@ public partial class AutoRentalPrnContext : DbContext
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.ToTable("Roles");
+            entity.ToTable("Role");
+
             entity.Property(e => e.RoleName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.ToTable("Users");
-            entity.HasIndex(e => e.Email, "IX_Users_Email");
-
-            entity.HasIndex(e => e.Username, "UQ__Users__536C85E4693DFFF7").IsUnique();
-
-            entity.HasIndex(e => e.Email, "UQ__Users__A9D1053404057845").IsUnique();
-
             entity.Property(e => e.CreatedDate).HasDefaultValueSql("(getdate())");
             entity.Property(e => e.Email).HasMaxLength(100);
-            entity.Property(e => e.FullName).HasMaxLength(256);
-            entity.Property(e => e.Password).HasMaxLength(255);
-            entity.Property(e => e.PhoneNumber).HasMaxLength(10);
-            entity.Property(e => e.Username).HasMaxLength(100);
+            entity.Property(e => e.FullName).HasMaxLength(100);
+            entity.Property(e => e.Password).HasMaxLength(50);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+            entity.Property(e => e.Username).HasMaxLength(50);
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
-                .HasConstraintName("FK_Users_Roles");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Users_Role");
         });
 
         modelBuilder.Entity<UserFeedback>(entity =>
@@ -186,17 +182,12 @@ public partial class AutoRentalPrnContext : DbContext
 
             entity.ToTable("UserFeedback");
 
-            entity.Property(e => e.Content).HasMaxLength(500);
+            entity.Property(e => e.Comment).HasMaxLength(500);
             entity.Property(e => e.CreatedDate).HasDefaultValueSql("(getdate())");
-
-            entity.HasOne(d => d.Car).WithMany(p => p.UserFeedbacks)
-                .HasForeignKey(d => d.CarId)
-                .OnDelete(DeleteBehavior.SetNull)
-                .HasConstraintName("FK_UserFeedback_CarId");
 
             entity.HasOne(d => d.User).WithMany(p => p.UserFeedbacks)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_UserFeedback_UserId");
+                .HasConstraintName("FK_UserFeedback_Users");
         });
 
         OnModelCreatingPartial(modelBuilder);
