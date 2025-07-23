@@ -1141,6 +1141,19 @@
           "bin/placeholder/BusinessObjects.dll": {}
         }
       },
+      "DataAccessObject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BusinessObjects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessObject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessObject.dll": {}
+        }
+      },
       "DataAccessObjects/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1158,6 +1171,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "DataAccessObject": "1.0.0",
           "DataAccessObjects": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
@@ -3129,6 +3143,11 @@
       "path": "../BusinessObject/BusinessObjects.csproj",
       "msbuildProject": "../BusinessObject/BusinessObjects.csproj"
     },
+    "DataAccessObject/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessObject/DataAccessObject.csproj",
+      "msbuildProject": "../DataAccessObject/DataAccessObject.csproj"
+    },
     "DataAccessObjects/1.0.0": {
       "type": "project",
       "path": "../Repositories/DataAccessObjects.csproj",
@@ -3142,6 +3161,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "DataAccessObjects >= 1.0.0",
       "Service >= 1.0.0"
     ]
   },
@@ -3177,6 +3197,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+            "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\DataAccessObjects.csproj": {
+              "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\DataAccessObjects.csproj"
+            },
             "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj": {
               "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj"
             }

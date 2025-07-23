@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Repositories\DataAccessObjects.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 

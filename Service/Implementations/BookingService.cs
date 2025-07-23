@@ -1,8 +1,10 @@
 using BusinessObjects;
-using Service.Interfaces;
-using System.Collections.Generic;
-using DataAccessObjects.Repositories.Interfaces;
 using DataAccessObjects.Repositories.Implementations;
+using DataAccessObjects.Repositories.Interfaces;
+using Service.Interfaces;
+
+using System.Collections.Generic;
+
 
 namespace Service.Implementations
 {

@@ -3,88 +3,88 @@
   "WorkspaceRootPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|d:\\ky5\\prn211\\inclass\\autorental\\service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|solutionrelative:service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\userprofilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\userprofilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\carlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\carlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\carlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\carlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\carbookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\carbookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\carbookingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\carbookingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|d:\\ky5\\prn211\\inclass\\autorental\\service\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|solutionrelative:service\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|d:\\ky5\\prn211\\inclass\\autorental\\service\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|solutionrelative:service\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\bookinghistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\bookinghistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C9533117-152E-409D-B40B-5E7218C0B8E8}|DataAccessObject\\DataAccessObject.csproj|d:\\ky5\\prn211\\inclass\\autorental\\dataaccessobject\\context\\autorentalprncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9533117-152E-409D-B40B-5E7218C0B8E8}|DataAccessObject\\DataAccessObject.csproj|solutionrelative:dataaccessobject\\context\\autorentalprncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\statustocancelvisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\statustocancelvisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9533117-152E-409D-B40B-5E7218C0B8E8}|DataAccessObject\\DataAccessObject.csproj|d:\\ky5\\prn211\\inclass\\autorental\\dataaccessobject\\dataaccessobject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C9533117-152E-409D-B40B-5E7218C0B8E8}|DataAccessObject\\DataAccessObject.csproj|solutionrelative:dataaccessobject\\dataaccessobject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\bookinghistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\bookinghistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C9533117-152E-409D-B40B-5E7218C0B8E8}|DataAccessObject\\DataAccessObject.csproj|d:\\ky5\\prn211\\inclass\\autorental\\dataaccessobject\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9533117-152E-409D-B40B-5E7218C0B8E8}|DataAccessObject\\DataAccessObject.csproj|solutionrelative:dataaccessobject\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|d:\\ky5\\prn211\\inclass\\autorental\\service\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|solutionrelative:service\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|d:\\ky5\\prn211\\inclass\\autorental\\service\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|solutionrelative:service\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|d:\\ky5\\prn211\\inclass\\autorental\\service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}|Service\\Service.csproj|solutionrelative:service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{245ACA76-C31E-40D4-B0A6-82C60962AF84}|BusinessObject\\BusinessObjects.csproj|d:\\ky5\\prn211\\inclass\\autorental\\businessobject\\businessobjects.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{245ACA76-C31E-40D4-B0A6-82C60962AF84}|BusinessObject\\BusinessObjects.csproj|solutionrelative:businessobject\\businessobjects.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{245ACA76-C31E-40D4-B0A6-82C60962AF84}|BusinessObject\\BusinessObjects.csproj|d:\\ky5\\prn211\\inclass\\autorental\\businessobject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{245ACA76-C31E-40D4-B0A6-82C60962AF84}|BusinessObject\\BusinessObjects.csproj|solutionrelative:businessobject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Context\\AutoRentalPrnContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Context\\AutoRentalPrnContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|d:\\ky5\\prn211\\inclass\\autorental\\autorental\\view\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Interfaces\\IBookingRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Repositories\\Interfaces\\IBookingRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Implementations\\BookingRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Repositories\\Implementations\\BookingRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Implementations\\UserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Repositories\\Implementations\\UserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,252 +110,265 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserProfileWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\UserProfileWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AutoRental\\View\\UserProfileWindow.xaml.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\UserProfileWindow.xaml.cs",
-              "RelativeToolTip": "AutoRental\\View\\UserProfileWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "Service\\Implementations\\UserService.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Implementations\\UserService.cs*",
+              "RelativeToolTip": "Service\\Implementations\\UserService.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T08:18:56.239Z"
+              "WhenOpened": "2025-07-23T09:24:53.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "AutoRental\\ViewModels\\RegisterViewModel.cs",
               "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\ViewModels\\RegisterViewModel.cs",
               "RelativeToolTip": "AutoRental\\ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAhwAUAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T08:13:10.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\RegisterWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AutoRental\\View\\RegisterWindow.xaml.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\RegisterWindow.xaml.cs",
-              "RelativeToolTip": "AutoRental\\View\\RegisterWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T08:08:03.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AutoRental\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\MainWindow.xaml.cs",
-              "RelativeToolTip": "AutoRental\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADgvyMAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T08:25:43.642Z",
+              "WhenOpened": "2025-07-23T09:08:04.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CarListWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarListWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AutoRental\\View\\CarListWindow.xaml.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarListWindow.xaml.cs",
-              "RelativeToolTip": "AutoRental\\View\\CarListWindow.xaml.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwAQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T08:13:26.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CarBookingWindow.xaml",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarBookingWindow.xaml",
-              "RelativeDocumentMoniker": "AutoRental\\View\\CarBookingWindow.xaml",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarBookingWindow.xaml",
-              "RelativeToolTip": "AutoRental\\View\\CarBookingWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-23T08:01:15.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Class1.cs",
-              "RelativeDocumentMoniker": "Service\\Class1.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Class1.cs",
-              "RelativeToolTip": "Service\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T08:36:14.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "CarBookingWindow.xaml.cs",
               "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarBookingWindow.xaml.cs",
               "RelativeDocumentMoniker": "AutoRental\\View\\CarBookingWindow.xaml.cs",
               "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarBookingWindow.xaml.cs",
               "RelativeToolTip": "AutoRental\\View\\CarBookingWindow.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T16:41:59.654Z"
+              "WhenOpened": "2025-07-23T09:21:03.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "CarListWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarListWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoRental\\View\\CarListWindow.xaml.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\CarListWindow.xaml.cs",
+              "RelativeToolTip": "AutoRental\\View\\CarListWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:08:09.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "AutoRental\\View\\LoginWindow.xaml.cs",
               "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\LoginWindow.xaml.cs",
               "RelativeToolTip": "AutoRental\\View\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T04:14:43.798Z"
+              "WhenOpened": "2025-07-23T09:12:52.049Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "AutoRental\\View\\LoginWindow.xaml",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\LoginWindow.xaml",
-              "RelativeToolTip": "AutoRental\\View\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T10:01:54.031Z"
+              "DocumentIndex": 1,
+              "Title": "RegisterWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\RegisterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoRental\\View\\RegisterWindow.xaml.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\RegisterWindow.xaml.cs",
+              "RelativeToolTip": "AutoRental\\View\\RegisterWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:12:39.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 0,
+              "Title": "UserProfileWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\UserProfileWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoRental\\View\\UserProfileWindow.xaml.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\UserProfileWindow.xaml.cs",
+              "RelativeToolTip": "AutoRental\\View\\UserProfileWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:18:16.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingHistoryWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\BookingHistoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoRental\\View\\BookingHistoryWindow.xaml.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\BookingHistoryWindow.xaml.cs",
+              "RelativeToolTip": "AutoRental\\View\\BookingHistoryWindow.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwDkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:18:27.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AutoRentalPrnContext.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Context\\AutoRentalPrnContext.cs",
-              "RelativeDocumentMoniker": "Repositories\\Context\\AutoRentalPrnContext.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Context\\AutoRentalPrnContext.cs",
-              "RelativeToolTip": "Repositories\\Context\\AutoRentalPrnContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\DataAccessObject\\Context\\AutoRentalPrnContext.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Context\\AutoRentalPrnContext.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\DataAccessObject\\Context\\AutoRentalPrnContext.cs",
+              "RelativeToolTip": "DataAccessObject\\Context\\AutoRentalPrnContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T07:53:17.82Z"
+              "WhenOpened": "2025-07-23T20:40:22.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "AutoRental\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "AutoRental\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAABCAAAAAAAAAA==",
+              "Title": "DataAccessObject",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\DataAccessObject\\DataAccessObject.csproj",
+              "RelativeDocumentMoniker": "DataAccessObject\\DataAccessObject.csproj",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\DataAccessObject\\DataAccessObject.csproj",
+              "RelativeToolTip": "DataAccessObject\\DataAccessObject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-23T20:40:20.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\DataAccessObject\\Class1.cs",
+              "RelativeDocumentMoniker": "DataAccessObject\\Class1.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\DataAccessObject\\Class1.cs",
+              "RelativeToolTip": "DataAccessObject\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T11:02:01.47Z"
+              "WhenOpened": "2025-07-23T20:39:45.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Implementations\\BookingService.cs",
+              "RelativeDocumentMoniker": "Service\\Implementations\\BookingService.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Implementations\\BookingService.cs*",
+              "RelativeToolTip": "Service\\Implementations\\BookingService.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:25:08.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IBookingRepository.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "RelativeToolTip": "Repositories\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T20:36:55.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Implementations\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repositories\\Implementations\\BookingRepository.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Implementations\\BookingRepository.cs",
+              "RelativeToolTip": "Repositories\\Repositories\\Implementations\\BookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:03:42.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:04:21.833Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\App.xaml",
-              "RelativeDocumentMoniker": "AutoRental\\App.xaml",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\App.xaml",
-              "RelativeToolTip": "AutoRental\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T09:48:08.835Z"
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Interfaces\\IBookingService.cs",
+              "RelativeDocumentMoniker": "Service\\Interfaces\\IBookingService.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Interfaces\\IBookingService.cs",
+              "RelativeToolTip": "Service\\Interfaces\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:25:11.643Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\appsettings.json",
-              "RelativeDocumentMoniker": "AutoRental\\appsettings.json",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\appsettings.json",
-              "RelativeToolTip": "AutoRental\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-20T09:17:39.01Z"
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Service\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Service\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:25:12.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "AutoRental\\View\\AdminWindow.xaml",
               "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\AdminWindow.xaml",
               "RelativeToolTip": "AutoRental\\View\\AdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T16:47:09.145Z"
+              "WhenOpened": "2025-07-23T09:17:56.975Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "BookingHistoryWindow.xaml",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\BookingHistoryWindow.xaml",
-              "RelativeDocumentMoniker": "AutoRental\\View\\BookingHistoryWindow.xaml",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\BookingHistoryWindow.xaml",
-              "RelativeToolTip": "AutoRental\\View\\BookingHistoryWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-21T14:59:29.136Z"
+              "Title": "BusinessObjects",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
+              "RelativeDocumentMoniker": "BusinessObject\\BusinessObjects.csproj",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
+              "RelativeToolTip": "BusinessObject\\BusinessObjects.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-23T09:20:00.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "AutoRental\\MainWindow.xaml",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\MainWindow.xaml",
-              "RelativeToolTip": "AutoRental\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-17T08:25:47.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StatusToCancelVisibilityConverter.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\StatusToCancelVisibilityConverter.cs",
-              "RelativeDocumentMoniker": "AutoRental\\StatusToCancelVisibilityConverter.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\StatusToCancelVisibilityConverter.cs",
-              "RelativeToolTip": "AutoRental\\StatusToCancelVisibilityConverter.cs",
+              "DocumentIndex": 16,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoRental\\View\\AdminWindow.xaml.cs",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "AutoRental\\View\\AdminWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T15:01:35.701Z"
+              "WhenOpened": "2025-07-23T09:18:21.917Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Service.csproj",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj",
-              "RelativeDocumentMoniker": "Service\\Service.csproj",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj",
-              "RelativeToolTip": "Service\\Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-17T08:36:54.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Class1.cs",
-              "RelativeDocumentMoniker": "Repositories\\Class1.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Repositories\\Class1.cs",
-              "RelativeToolTip": "Repositories\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T08:35:54.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\BusinessObject\\User.cs",
-              "RelativeDocumentMoniker": "BusinessObject\\User.cs",
-              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\BusinessObject\\User.cs",
-              "RelativeToolTip": "BusinessObject\\User.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T04:01:33.982Z"
+              "Title": "RegisterWindow.xaml",
+              "DocumentMoniker": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\RegisterWindow.xaml",
+              "RelativeDocumentMoniker": "AutoRental\\View\\RegisterWindow.xaml",
+              "ToolTip": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\View\\RegisterWindow.xaml",
+              "RelativeToolTip": "AutoRental\\View\\RegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-23T09:12:32.024Z"
             }
           ]
         },

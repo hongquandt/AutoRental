@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObjects", "Reposi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObject", "DataAccessObject\DataAccessObject.csproj", "{C9533117-152E-409D-B40B-5E7218C0B8E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1838B546-A5DF-4B76-BB21-BF72E2BB7FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9533117-152E-409D-B40B-5E7218C0B8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9533117-152E-409D-B40B-5E7218C0B8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9533117-152E-409D-B40B-5E7218C0B8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9533117-152E-409D-B40B-5E7218C0B8E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

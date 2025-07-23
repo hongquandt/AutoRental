@@ -14,5 +14,5 @@ D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\refint\Service.dll
 D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.pdb
 D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\ref\Service.dll
 D:\Ky5\prn211\INCLASS\AutoRental\Service\obj\Debug\net8.0\Service.sourcelink.json
-D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\DataAccessObjects.dll
-D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\DataAccessObjects.pdb
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\DataAccessObject.dll
+D:\Ky5\prn211\INCLASS\AutoRental\Service\bin\Debug\net8.0\DataAccessObject.pdb

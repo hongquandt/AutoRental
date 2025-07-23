@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "AutoRental/1.0.0": {
         "dependencies": {
+          "DataAccessObjects": "1.0.0",
           "Service": "1.0.0"
         },
         "runtime": {
@@ -625,12 +626,12 @@
           }
         }
       },
-      "DataAccessObjects/1.0.0": {
+      "DataAccessObject/1.0.0": {
         "dependencies": {
           "BusinessObjects": "1.0.0"
         },
         "runtime": {
-          "DataAccessObjects.dll": {
+          "DataAccessObject.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -638,6 +639,7 @@
       },
       "Service/1.0.0": {
         "dependencies": {
+          "DataAccessObject": "1.0.0",
           "DataAccessObjects": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
@@ -1096,7 +1098,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DataAccessObjects/1.0.0": {
+    "DataAccessObject/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
