@@ -2,37 +2,93 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:AutoRental"
-        Title="Lịch sử đặt xe" Height="550" Width="900" Background="#f4f6fb" FontFamily="Segoe UI" WindowStartupLocation="CenterScreen">
+        Title="Lịch sử đặt xe" Height="700" Width="900" Background="#f4f6fb" FontFamily="Segoe UI" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <local:StatusToCancelVisibilityConverter x:Key="StatusToCancelVisibility"/>
+        <Style TargetType="DataGrid">
+            <Setter Property="RowBackground" Value="#f9f9f9"/>
+            <Setter Property="AlternatingRowBackground" Value="#e3eaf2"/>
+            <Setter Property="BorderBrush" Value="#b0bec5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="#2d3a4a"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#1976d2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="#1565c0"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Background" Value="#e53935"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="8" SnapsToDevicePixels="True" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#b71c1c"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.18"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#880808"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     <Grid>
-        <Border Background="White" CornerRadius="14" Padding="24" Margin="20">
-            <DockPanel>
-                <TextBlock Text="Lịch sử đặt xe" FontSize="26" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,18" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
-                
-                <StackPanel DockPanel.Dock="Bottom" Margin="0,15,0,0">
-                    <Button x:Name="btnCancelBooking" Content="HUỶ ĐẶT XE" Width="150" Height="40"
-                            Click="BtnCancelBooking_Click"
-                            Background="#e53935" Foreground="White" FontWeight="Bold" BorderThickness="0"
-                            HorizontalAlignment="Center" IsEnabled="False"/>
-                </StackPanel>
-                
-                <DataGrid x:Name="dgBookings" ItemsSource="{Binding Bookings}" 
-                          SelectedItem="{Binding SelectedBooking, Mode=TwoWay}" 
-                          AutoGenerateColumns="False" Margin="0,0,0,0" IsReadOnly="True"
-                          SelectionChanged="DgBookings_SelectionChanged">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Mã đặt" Binding="{Binding BookingCode}" Width="100"/>
-                        <DataGridTextColumn Header="Tên xe" Binding="{Binding Car.CarModel}" Width="*"/>
-                        <DataGridTextColumn Header="Biển số" Binding="{Binding Car.LicensePlate}" Width="120"/>
-                        <DataGridTextColumn Header="Ngày nhận" Binding="{Binding PickupDateTime, StringFormat=dd/MM/yyyy}" Width="110"/>
-                        <DataGridTextColumn Header="Ngày trả" Binding="{Binding ReturnDateTime, StringFormat=dd/MM/yyyy}" Width="110"/>
-                        <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalAmount, StringFormat=N0}" Width="120"/>
-                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </DockPanel>
+        <Border Background="White" CornerRadius="20" Padding="28" Margin="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="18" ShadowDepth="0" Opacity="0.13"/>
+            </Border.Effect>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <DockPanel>
+                    <!-- Logo AUTORENTAL -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10" DockPanel.Dock="Top">
+                        <TextBlock Text="AUTO" FontWeight="Bold" FontSize="28" Foreground="#222"/>
+                        <TextBlock Text="RENTAL" FontWeight="Bold" FontSize="28" Foreground="#1de9b6" Margin="2,0,0,0"/>
+                    </StackPanel>
+                    <TextBlock Text="Lịch sử đặt xe" FontSize="26" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,18" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+                    <StackPanel DockPanel.Dock="Bottom" Margin="0,24,0,0">
+                        <Button x:Name="btnCancelBooking" Content="HUỶ ĐẶT XE" Click="BtnCancelBooking_Click" IsEnabled="False"/>
+                    </StackPanel>
+                    <DataGrid x:Name="dgBookings" ItemsSource="{Binding Bookings}" 
+                              SelectedItem="{Binding SelectedBooking, Mode=TwoWay}" 
+                              AutoGenerateColumns="False" Margin="0,0,0,0" IsReadOnly="True"
+                              SelectionChanged="DgBookings_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Mã đặt" Binding="{Binding BookingCode}" Width="100"/>
+                            <DataGridTextColumn Header="Tên xe" Binding="{Binding Car.CarModel}" Width="*"/>
+                            <DataGridTextColumn Header="Biển số" Binding="{Binding Car.LicensePlate}" Width="120"/>
+                            <DataGridTextColumn Header="Ngày nhận" Binding="{Binding PickupDateTime, StringFormat=dd/MM/yyyy}" Width="110"/>
+                            <DataGridTextColumn Header="Ngày trả" Binding="{Binding ReturnDateTime, StringFormat=dd/MM/yyyy}" Width="110"/>
+                            <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalAmount, StringFormat=N0}" Width="120"/>
+                            <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+            </ScrollViewer>
         </Border>
     </Grid>
 </Window> 

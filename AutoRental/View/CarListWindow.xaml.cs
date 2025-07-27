@@ -2,6 +2,7 @@ using System.Windows;
 using BusinessObjects;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace AutoRental
@@ -34,7 +35,10 @@ namespace AutoRental
         {
             using (var db = new AutoRentalPrnContext())
             {
-                var query = db.Cars.Where(c => c.Status == "Available");
+                var query = db.Cars
+                    .Include(c => c.CarImages)
+                    .Include(c => c.Brand)
+                    .Where(c => c.Status == "Available");
                 if (!string.IsNullOrWhiteSpace(search))
                 {
                     query = query.Where(c => c.CarModel.Contains(search) || c.LicensePlate.Contains(search));
