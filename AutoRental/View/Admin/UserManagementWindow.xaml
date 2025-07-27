@@ -114,12 +114,35 @@
 
         <!-- Header -->
         <Border Grid.Row="0" Background="White" CornerRadius="12" Padding="25" Margin="0,0,0,20">
-            <StackPanel>
-                <TextBlock Text="👥 Quản lý Người dùng" FontSize="28" FontWeight="Bold" 
-                           Foreground="#1976d2" HorizontalAlignment="Center" Margin="0,0,0,12"/>
-                <TextBlock Text="Quản lý thông tin tất cả người dùng trong hệ thống" 
-                           FontSize="16" Foreground="#666" HorizontalAlignment="Center"/>
-            </StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Back Button -->
+                <Button Grid.Column="0" Content="⬅️ Quay lại" 
+                        Command="{Binding BackCommand}"
+                        Width="120" Height="40"
+                        Style="{StaticResource ActionButtonStyle}"
+                        ToolTip="Quay lại Admin Window">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#607d8b" Offset="0"/>
+                            <GradientStop Color="#455a64" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                
+                <!-- Title -->
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="👥 Quản lý Người dùng" FontSize="28" FontWeight="Bold" 
+                               Foreground="#1976d2" HorizontalAlignment="Center" Margin="0,0,0,12"/>
+                    <TextBlock Text="Quản lý thông tin tất cả người dùng trong hệ thống" 
+                               FontSize="16" Foreground="#666" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
         </Border>
 
         <!-- Search and Controls -->

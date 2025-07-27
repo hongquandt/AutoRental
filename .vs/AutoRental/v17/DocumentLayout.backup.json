@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "L:\\Workspace\\C#\\AutoRental\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\viewmodels\\admin\\vouchermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\viewmodels\\admin\\vouchermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\viewmodels\\admin\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\viewmodels\\admin\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\view\\admin\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\admin\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\view\\admin\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\admin\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\view\\admin\\bookingmanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\admin\\bookingmanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\view\\admin\\vouchermanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\admin\\vouchermanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|l:\\workspace\\c#\\autorental\\autorental\\view\\admin\\voucherdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75252E16-8143-4213-AE41-D5FFC8AD1A87}|AutoRental\\AutoRental.csproj|solutionrelative:autorental\\view\\admin\\voucherdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 336,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoRental\\View\\Admin\\AdminWindow.xaml.cs",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "AutoRental\\View\\Admin\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:18:07.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingManagementWindow.xaml",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\BookingManagementWindow.xaml",
+              "RelativeDocumentMoniker": "AutoRental\\View\\Admin\\BookingManagementWindow.xaml",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\BookingManagementWindow.xaml",
+              "RelativeToolTip": "AutoRental\\View\\Admin\\BookingManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T12:18:06.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "AutoRental\\View\\Admin\\AdminWindow.xaml",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\AdminWindow.xaml",
+              "RelativeToolTip": "AutoRental\\View\\Admin\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T12:18:04.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserManagementViewModel.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\ViewModels\\Admin\\UserManagementViewModel.cs",
+              "RelativeDocumentMoniker": "AutoRental\\ViewModels\\Admin\\UserManagementViewModel.cs",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\ViewModels\\Admin\\UserManagementViewModel.cs",
+              "RelativeToolTip": "AutoRental\\ViewModels\\Admin\\UserManagementViewModel.cs",
+              "ViewState": "AgIAAG8BAAAAAAAAAAAowJwBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:13:50.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VoucherManagementViewModel.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\ViewModels\\Admin\\VoucherManagementViewModel.cs",
+              "RelativeDocumentMoniker": "AutoRental\\ViewModels\\Admin\\VoucherManagementViewModel.cs",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\ViewModels\\Admin\\VoucherManagementViewModel.cs",
+              "RelativeToolTip": "AutoRental\\ViewModels\\Admin\\VoucherManagementViewModel.cs",
+              "ViewState": "AgIAAGYBAAAAAAAAAAAMwHYBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:13:42.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VoucherManagementWindow.xaml",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\VoucherManagementWindow.xaml",
+              "RelativeDocumentMoniker": "AutoRental\\View\\Admin\\VoucherManagementWindow.xaml",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\VoucherManagementWindow.xaml",
+              "RelativeToolTip": "AutoRental\\View\\Admin\\VoucherManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T11:59:17.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VoucherDialog.xaml",
+              "DocumentMoniker": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\VoucherDialog.xaml",
+              "RelativeDocumentMoniker": "AutoRental\\View\\Admin\\VoucherDialog.xaml",
+              "ToolTip": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\View\\Admin\\VoucherDialog.xaml",
+              "RelativeToolTip": "AutoRental\\View\\Admin\\VoucherDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T11:53:17.534Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 64,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

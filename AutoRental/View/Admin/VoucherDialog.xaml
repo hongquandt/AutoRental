@@ -1,0 +1,111 @@
+<Window x:Class="AutoRental.View.Admin.VoucherDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding DialogTitle}" Height="500" Width="450" 
+        WindowStartupLocation="CenterScreen" 
+        Background="#f4f6fb" FontFamily="Segoe UI"
+        WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize"
+        Loaded="VoucherDialog_Loaded">
+    
+    <Window.Resources>
+        <!-- Style cho nút Save -->
+        <Style x:Key="SaveButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#cccccc"/>
+                                <Setter Property="Foreground" Value="#666666"/>
+                                <Setter Property="Cursor" Value="Arrow"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#45a049"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="White" CornerRadius="12" Padding="20" Margin="0,0,0,20">
+            <StackPanel>
+                <TextBlock Text="{Binding DialogIcon}" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <TextBlock Text="{Binding DialogTitle}" FontSize="24" FontWeight="Bold" 
+                           Foreground="#1976d2" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                <TextBlock Text="{Binding DialogSubtitle}" FontSize="14" 
+                           Foreground="#666" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Form Fields -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <Border Background="White" CornerRadius="12" Padding="20">
+                <StackPanel>
+                <!-- Discount Name -->
+                <TextBlock Text="Tên voucher *" FontWeight="SemiBold" FontSize="14" Margin="0,0,0,8"/>
+                <TextBox x:Name="txtDiscountName" Text="{Binding DiscountName, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="40" Padding="12,10" Margin="0,0,0,5"
+                         BorderBrush="#ddd" BorderThickness="1" FontSize="14"
+                         TextChanged="txtDiscountName_TextChanged"
+                         LostFocus="txtDiscountName_LostFocus"/>
+                <TextBlock x:Name="txtDiscountNameError" Foreground="Red" FontSize="12" 
+                           Margin="0,0,0,15" Visibility="Collapsed"/>
+
+                <!-- Discount Value -->
+                <TextBlock Text="Giá trị giảm giá (%) *" FontWeight="SemiBold" FontSize="14" Margin="0,0,0,8"/>
+                <TextBox x:Name="txtDiscountValue" Text="{Binding DiscountValue, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="40" Padding="12,10" Margin="0,0,0,5"
+                         BorderBrush="#ddd" BorderThickness="1" FontSize="14"
+                         TextChanged="txtDiscountValue_TextChanged"
+                         LostFocus="txtDiscountValue_LostFocus"/>
+                <TextBlock x:Name="txtDiscountValueError" Foreground="Red" FontSize="12" 
+                           Margin="0,0,0,15" Visibility="Collapsed"/>
+
+                <!-- General Error Message -->
+                <TextBlock x:Name="txtErrorMessage" Text="{Binding ErrorMessage}" 
+                           Foreground="Red" FontSize="13" 
+                           Margin="0,0,0,20"
+                           Visibility="Collapsed"/>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+
+        <!-- Buttons -->
+        <Border Grid.Row="2" Background="White" Padding="20" Margin="0,20,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Hủy" Width="100" Height="40" 
+                        Background="#9e9e9e" Foreground="White" FontWeight="SemiBold" FontSize="14"
+                        BorderThickness="0" Margin="0,0,15,0"
+                        Click="btnCancel_Click"/>
+                <Button Content="{Binding SaveButtonText}" 
+                        Background="#4caf50"
+                        IsEnabled="{Binding CanSave}"
+                        Style="{StaticResource SaveButtonStyle}"
+                        Click="btnSave_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window> 

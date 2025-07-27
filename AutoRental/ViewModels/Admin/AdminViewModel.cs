@@ -56,9 +56,11 @@ namespace AutoRental.ViewModels.Admin
 
         private void ManageVouchers()
         {
-            // TODO: Open Voucher Management Window
-            MessageBox.Show("Chức năng quản lý Voucher sẽ được phát triển sau!", "Thông báo",
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            var voucherManagementWindow = new View.Admin.VoucherManagementWindow();
+            voucherManagementWindow.Show();
+            
+            // Đóng AdminWindow chính xác
+            _adminWindow.Close();
         }
 
         private void Logout()

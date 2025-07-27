@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using System.Windows;
 
 namespace AutoRental.ViewModels.Admin
 {
@@ -98,6 +99,7 @@ namespace AutoRental.ViewModels.Admin
         public ICommand EditUserCommand { get; }
         public ICommand DeleteUserCommand { get; }
         public ICommand ClearFiltersCommand { get; }
+        public ICommand BackCommand { get; }
 
         public UserManagementViewModel(IUserService userService)
         {
@@ -114,6 +116,7 @@ namespace AutoRental.ViewModels.Admin
             EditUserCommand = new RelayCommand(EditUser, () => CanEditUser);
             DeleteUserCommand = new RelayCommand(DeleteUser, () => CanDeleteUser);
             ClearFiltersCommand = new RelayCommand(ClearFilters);
+            BackCommand = new RelayCommand(BackToAdmin);
 
             // Load users and roles when ViewModel is created
             LoadUsers();
@@ -128,16 +131,16 @@ namespace AutoRental.ViewModels.Admin
                 StatusMessage = "Đang tải...";
                 _allUsers = _userService.GetAll().ToList(); // Cache tất cả users
                 Users = new ObservableCollection<User>(_allUsers);
-                
+
                 // Load available roles after loading users
                 LoadAvailableRoles();
-                
+
                 StatusMessage = "Sẵn sàng";
             }
             catch (Exception ex)
             {
                 StatusMessage = "Lỗi tải dữ liệu";
-                System.Windows.MessageBox.Show($"Lỗi khi tải danh sách người dùng: {ex.Message}", 
+                System.Windows.MessageBox.Show($"Lỗi khi tải danh sách người dùng: {ex.Message}",
                     "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
         }
@@ -175,7 +178,7 @@ namespace AutoRental.ViewModels.Admin
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show($"Lỗi khi tải danh sách vai trò: {ex.Message}", 
+                System.Windows.MessageBox.Show($"Lỗi khi tải danh sách vai trò: {ex.Message}",
                     "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
         }
@@ -185,7 +188,7 @@ namespace AutoRental.ViewModels.Admin
             try
             {
                 StatusMessage = "Đang lọc...";
-                
+
                 var filteredUsers = _allUsers.AsEnumerable();
 
                 // Apply role filter
@@ -198,7 +201,7 @@ namespace AutoRental.ViewModels.Admin
                 if (!string.IsNullOrWhiteSpace(SearchText))
                 {
                     var searchTerm = SearchText.Trim().ToLower();
-                    filteredUsers = filteredUsers.Where(u => 
+                    filteredUsers = filteredUsers.Where(u =>
                         // 1. Search theo UserId
                         u.UserId.ToString().Contains(searchTerm) ||
                         // 2. Search theo Username
@@ -225,7 +228,7 @@ namespace AutoRental.ViewModels.Admin
             catch (Exception ex)
             {
                 StatusMessage = "Lỗi lọc dữ liệu";
-                System.Windows.MessageBox.Show($"Lỗi khi lọc dữ liệu: {ex.Message}", 
+                System.Windows.MessageBox.Show($"Lỗi khi lọc dữ liệu: {ex.Message}",
                     "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
         }
@@ -242,14 +245,14 @@ namespace AutoRental.ViewModels.Admin
             try
             {
                 StatusMessage = "Đang mở form thêm user...";
-                
+
                 // Tạo ViewModel cho dialog thêm user
                 var dialogViewModel = new UserDialogViewModel(_userService);
                 var dialog = new View.Admin.UserDialog(dialogViewModel);
-                
+
                 // Hiển thị dialog modal
                 bool? result = dialog.ShowDialog();
-                
+
                 if (result == true)
                 {
                     // User được thêm thành công, refresh danh sách
@@ -264,7 +267,7 @@ namespace AutoRental.ViewModels.Admin
             catch (Exception ex)
             {
                 StatusMessage = "Lỗi thêm user";
-                System.Windows.MessageBox.Show($"Lỗi khi thêm user: {ex.Message}", 
+                System.Windows.MessageBox.Show($"Lỗi khi thêm user: {ex.Message}",
                     "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
         }
@@ -275,20 +278,20 @@ namespace AutoRental.ViewModels.Admin
             {
                 if (SelectedUser == null)
                 {
-                    System.Windows.MessageBox.Show("Vui lòng chọn user cần sửa!", 
+                    System.Windows.MessageBox.Show("Vui lòng chọn user cần sửa!",
                         "Thông báo", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Warning);
                     return;
                 }
 
                 StatusMessage = "Đang mở form sửa user...";
-                
+
                 // Tạo ViewModel cho dialog sửa user
                 var dialogViewModel = new UserDialogViewModel(_userService, SelectedUser);
                 var dialog = new View.Admin.UserDialog(dialogViewModel);
-                
+
                 // Hiển thị dialog modal
                 bool? result = dialog.ShowDialog();
-                
+
                 if (result == true)
                 {
                     // User được sửa thành công, refresh danh sách
@@ -303,7 +306,7 @@ namespace AutoRental.ViewModels.Admin
             catch (Exception ex)
             {
                 StatusMessage = "Lỗi sửa user";
-                System.Windows.MessageBox.Show($"Lỗi khi sửa user: {ex.Message}", 
+                System.Windows.MessageBox.Show($"Lỗi khi sửa user: {ex.Message}",
                     "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
         }
@@ -314,7 +317,7 @@ namespace AutoRental.ViewModels.Admin
             {
                 if (SelectedUser == null)
                 {
-                    System.Windows.MessageBox.Show("Vui lòng chọn user cần xóa!", 
+                    System.Windows.MessageBox.Show("Vui lòng chọn user cần xóa!",
                         "Thông báo", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Warning);
                     return;
                 }
@@ -327,48 +330,90 @@ namespace AutoRental.ViewModels.Admin
                     $"Bạn có chắc chắn muốn xóa user '{userToDelete.Username}'?\n\n" +
                     $"Tên: {userToDelete.FullName}\n" +
                     $"Email: {userToDelete.Email}",
-                    "Xác nhận xóa", 
-                    System.Windows.MessageBoxButton.YesNo, 
+                    "Xác nhận xóa",
+                    System.Windows.MessageBoxButton.YesNo,
                     System.Windows.MessageBoxImage.Question);
 
                 if (result == System.Windows.MessageBoxResult.Yes)
                 {
                     StatusMessage = "Đang xóa user...";
-                    
+
                     // Thực hiện xóa
                     bool success = _userService.Delete(userToDelete.UserId);
-                    
+
                     if (success)
                     {
                         // Cập nhật UI
                         _allUsers.Remove(userToDelete);
                         Users.Remove(userToDelete);
                         SelectedUser = null;
-                        
+
                         StatusMessage = "Xóa thành công";
-                        
+
                         // Hiển thị MessageBox thành công
-                        System.Windows.MessageBox.Show($"Xóa user '{userToDelete.Username}' thành công!", 
+                        System.Windows.MessageBox.Show($"Xóa user '{userToDelete.Username}' thành công!",
                             "Thành công", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
                     }
                     else
                     {
                         StatusMessage = "Lỗi xóa user";
-                        
+
                         // Hiển thị MessageBox lỗi
-                        System.Windows.MessageBox.Show("Không thể xóa user. Vui lòng kiểm tra lại và thử lại!", 
+                        System.Windows.MessageBox.Show("Không thể xóa user. Vui lòng kiểm tra lại và thử lại!",
                             "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                     }
                 }
-                
+
                 StatusMessage = "Sẵn sàng";
             }
             catch (Exception ex)
             {
                 StatusMessage = "Lỗi xóa user";
-                
+
                 // Hiển thị MessageBox exception
-                System.Windows.MessageBox.Show($"Lỗi khi xóa user: {ex.Message}", 
+                System.Windows.MessageBox.Show($"Lỗi khi xóa user: {ex.Message}",
+                    "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            }
+        }
+
+                private void BackToAdmin()
+        {
+            try
+            {
+                // Tìm AdminWindow hiện tại để lấy thông tin admin
+                var currentAdminWindow = System.Windows.Application.Current.Windows
+                    .OfType<AdminWindow>()
+                    .FirstOrDefault();
+                
+                if (currentAdminWindow != null)
+                {
+                    // Mở lại AdminWindow hiện tại
+                    currentAdminWindow.Show();
+                    currentAdminWindow.WindowState = WindowState.Normal;
+                    currentAdminWindow.Activate();
+                }
+                else
+                {
+                    // Nếu không tìm thấy AdminWindow, tạo mới với admin mặc định
+                    // (Trong thực tế, bạn có thể cần lưu thông tin admin trong session)
+                    var adminUser = new User { UserId = 1, Username = "admin" }; // Giá trị mặc định
+                    var adminWindow = new AdminWindow(adminUser);
+                    adminWindow.Show();
+                }
+                
+                // Đóng UserManagementWindow hiện tại
+                var currentWindow = System.Windows.Application.Current.Windows
+                    .OfType<View.Admin.UserManagementWindow>()
+                    .FirstOrDefault();
+                
+                if (currentWindow != null)
+                {
+                    currentWindow.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Lỗi khi quay lại Admin Window: {ex.Message}", 
                     "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
         }

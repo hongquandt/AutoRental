@@ -194,3 +194,5 @@ L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Admin\Bookin
 L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Admin\VoucherManagementWindow.baml
 L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Admin\UserDialog.g.cs
 L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Admin\UserDialog.baml
+L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Admin\VoucherDialog.baml
+L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\View\Admin\VoucherDialog.g.cs
