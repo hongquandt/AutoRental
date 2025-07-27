@@ -27,7 +27,7 @@ namespace AutoRental
             var user = _viewModel.Authenticate();
             if (user != null)
             {
-                if (user.RoleId == 1)
+                if (user.RoleId == 2)
                 {
                     var adminWindow = new AdminWindow(user);
                     adminWindow.Show();

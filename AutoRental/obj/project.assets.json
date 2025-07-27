@@ -3146,23 +3146,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\hyper\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\AutoRental.csproj",
+      "projectUniqueName": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\AutoRental.csproj",
       "projectName": "AutoRental",
-      "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\AutoRental.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\AutoRental\\obj\\",
+      "projectPath": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\AutoRental.csproj",
+      "packagesPath": "C:\\Users\\hyper\\.nuget\\packages\\",
+      "outputPath": "L:\\Workspace\\C#\\AutoRental\\AutoRental\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hyper\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3177,8 +3177,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj": {
-              "projectPath": "D:\\Ky5\\prn211\\INCLASS\\AutoRental\\Service\\Service.csproj"
+            "L:\\Workspace\\C#\\AutoRental\\Service\\Service.csproj": {
+              "projectPath": "L:\\Workspace\\C#\\AutoRental\\Service\\Service.csproj"
             }
           }
         }
@@ -3193,7 +3193,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -3217,7 +3217,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
