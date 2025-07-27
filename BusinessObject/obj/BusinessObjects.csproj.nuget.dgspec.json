@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {}
+    "D:\\Ky5\\prn211\\PRN_Asg\\New folder (2)\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {}
   },
   "projects": {
-    "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {
+    "D:\\Ky5\\prn211\\PRN_Asg\\New folder (2)\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
+        "projectUniqueName": "D:\\Ky5\\prn211\\PRN_Asg\\New folder (2)\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
-        "packagesPath": "C:\\Users\\hyper\\.nuget\\packages\\",
-        "outputPath": "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\obj\\",
+        "projectPath": "D:\\Ky5\\prn211\\PRN_Asg\\New folder (2)\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Ky5\\prn211\\PRN_Asg\\New folder (2)\\AutoRental\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hyper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

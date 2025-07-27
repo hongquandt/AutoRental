@@ -30,3 +30,19 @@ L:\Workspace\C#\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.dl
 L:\Workspace\C#\AutoRental\DataAccessObject\obj\Debug\net8.0\refint\DataAccessObject.dll
 L:\Workspace\C#\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.pdb
 L:\Workspace\C#\AutoRental\DataAccessObject\obj\Debug\net8.0\ref\DataAccessObject.dll
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\bin\Debug\net8.0\DataAccessObject.deps.json
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\bin\Debug\net8.0\DataAccessObject.dll
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\bin\Debug\net8.0\DataAccessObject.pdb
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\bin\Debug\net8.0\BusinessObjects.dll
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\bin\Debug\net8.0\BusinessObjects.pdb
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.csproj.AssemblyReference.cache
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.AssemblyInfoInputs.cache
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.AssemblyInfo.cs
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.csproj.CoreCompileInputs.cache
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.sourcelink.json
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAcce.FCD2CC32.Up2Date
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.dll
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\refint\DataAccessObject.dll
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\DataAccessObject.pdb
+D:\Ky5\prn211\PRN_Asg\New folder (2)\AutoRental\DataAccessObject\obj\Debug\net8.0\ref\DataAccessObject.dll

@@ -45,7 +45,7 @@ namespace AutoRental
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-            var homeWindow = new HomeWindow();
+            var homeWindow = new HomeWindow(_currentUser);
             homeWindow.ShowDialog();
         }
     }
