@@ -67,10 +67,15 @@
                     <TextBlock x:Name="txtLicensePlate" Margin="0,0,0,8"/>
                     <TextBlock Text="Giá/ngày:" FontWeight="SemiBold"/>
                     <TextBlock x:Name="txtPrice" Margin="0,0,0,16"/>
-                    <TextBlock Text="Ngày nhận xe:"/>
-                    <DatePicker x:Name="dpPickup"/>
-                    <TextBlock Text="Ngày trả xe:"/>
-                    <DatePicker x:Name="dpReturn" Margin="0,0,0,16"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock Text="Ngày nhận:" Width="90" VerticalAlignment="Center"/>
+                        <DatePicker x:Name="dpPickup" Width="140" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock Text="Ngày trả:" Width="90" VerticalAlignment="Center"/>
+                        <DatePicker x:Name="dpReturn" Width="140" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+                    </StackPanel>
+                    <TextBlock x:Name="txtTotal" FontWeight="Bold" FontSize="16" Foreground="#1976d2" Margin="0,10,0,0"/>
                     <TextBlock x:Name="txtError" Foreground="Red" FontSize="12" Margin="0,0,0,10" Visibility="Collapsed"/>
                     <Button x:Name="btnBook" Content="Xác nhận đặt xe" Click="btnBook_Click" Margin="0,24,0,0"/>
                 </StackPanel>
