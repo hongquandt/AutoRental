@@ -5,7 +5,6 @@ using System.IO;
 using BusinessObjects;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using DataAccessObjects.Context;
 
 class Program
 {
@@ -14,13 +13,13 @@ class Program
         Console.WriteLine("Đang kiểm tra kết nối database...");
         bool ok = TestConnection();
         Console.WriteLine(ok ? "Kết nối thành công!" : "Kết nối thất bại!");
-        
+
         if (ok)
         {
             Console.Write("Nhập email người dùng để lấy thông tin: ");
             string email = Console.ReadLine();
             var user = GetUserProfile(email);
-            
+
             if (user != null)
             {
                 Console.WriteLine("\n--- THÔNG TIN NGƯỜI DÙNG ---");
@@ -37,7 +36,7 @@ class Program
                 Console.WriteLine("Không tìm thấy người dùng với email này!");
             }
         }
-        
+
         Console.WriteLine("\nNhấn phím bất kỳ để thoát...");
         Console.ReadKey();
     }
@@ -63,7 +62,7 @@ class Program
             return false;
         }
     }
-    
+
     static User GetUserProfile(string email)
     {
         try

@@ -42,23 +42,25 @@ namespace AutoRental.ViewModels.Admin
         {
             var userManagementWindow = new View.Admin.UserManagementWindow();
             userManagementWindow.Show();
-            
+
             // Đóng AdminWindow chính xác
             _adminWindow.Close();
         }
 
         private void ManageBookings()
         {
-            // TODO: Open Booking Management Window
-            MessageBox.Show("Chức năng quản lý Booking sẽ được phát triển sau!", "Thông báo",
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            var bookingManagementWindow = new View.Admin.BookingManagementWindow();
+            bookingManagementWindow.Show();
+
+            // Đóng AdminWindow chính xác
+            _adminWindow.Close();
         }
 
         private void ManageVouchers()
         {
             var voucherManagementWindow = new View.Admin.VoucherManagementWindow();
             voucherManagementWindow.Show();
-            
+
             // Đóng AdminWindow chính xác
             _adminWindow.Close();
         }
@@ -80,24 +82,5 @@ namespace AutoRental.ViewModels.Admin
     }
 
     // Simple RelayCommand implementation
-    public class RelayCommand : ICommand
-    {
-        private readonly Action _execute;
-        private readonly Func<bool>? _canExecute;
 
-        public RelayCommand(Action execute, Func<bool>? canExecute = null)
-        {
-            _execute = execute ?? throw new ArgumentNullException(nameof(execute));
-            _canExecute = canExecute;
-        }
-
-        public event EventHandler? CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public bool CanExecute(object? parameter) => _canExecute?.Invoke() ?? true;
-        public void Execute(object? parameter) => _execute();
-    }
 }
