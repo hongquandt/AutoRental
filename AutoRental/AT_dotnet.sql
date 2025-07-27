@@ -258,3 +258,41 @@ SET ImageUrl =
     END
 WHERE CarId BETWEEN 1 AND 27;
 GO
+
+--SET IDENTITY_INSERT CarBrand ON;
+
+--INSERT INTO CarBrand (BrandId, BrandName) VALUES (1, N'Toyota');
+--INSERT INTO CarBrand (BrandId, BrandName) VALUES (2, N'Honda');
+--INSERT INTO CarBrand (BrandId, BrandName) VALUES (3, N'Ford');
+--INSERT INTO CarBrand (BrandId, BrandName) VALUES (4, N'Hyundai');
+--INSERT INTO CarBrand (BrandId, BrandName) VALUES (5, N'Mazda');
+
+--SET IDENTITY_INSERT CarBrand OFF;
+
+--SET IDENTITY_INSERT Car ON;
+
+--INSERT INTO Car (CarId, BrandId, CarModel, LicensePlate, Seats, PricePerDay, Status)
+--VALUES 
+--(1, 1, N'Toyota Vios', N'51A-12345', 5, 500000, 'Available'),
+--(2, 1, N'Toyota Camry', N'51A-67890', 5, 800000, 'Available'),
+--(3, 2, N'Honda City', N'51B-12345', 5, 600000, 'Available'),
+--(4, 2, N'Honda Civic', N'51B-67890', 5, 700000, 'Available'),
+--(5, 3, N'Ford Ranger', N'51C-12345', 5, 900000, 'Available'),
+--(6, 4, N'Hyundai Accent', N'51D-12345', 5, 450000, 'Available'),
+--(7, 5, N'Mazda 3', N'51E-12345', 5, 650000, 'Available');
+
+--SET IDENTITY_INSERT Car OFF;
+
+SET IDENTITY_INSERT Booking ON;
+
+INSERT INTO Booking (BookingId, UserId, CarId, DiscountId, PickupDateTime, ReturnDateTime, TotalAmount, Status, BookingCode)
+VALUES
+(1, 2, 1, NULL, '2025-07-28 08:00:00', '2025-07-29 08:00:00', 500000, 'Pending', 'BK-001'),
+(2, 3, 2, NULL, '2025-07-29 09:00:00', '2025-07-30 09:00:00', 800000, 'Confirmed', 'BK-002'),
+(3, 4, 3, NULL, '2025-07-30 10:00:00', '2025-08-01 10:00:00', 1200000, 'Completed', 'BK-003'),
+(4, 5, 4, NULL, '2025-08-01 11:00:00', '2025-08-02 11:00:00', 700000, 'Cancelled', 'BK-004'),
+(5, 6, 5, NULL, '2025-08-02 12:00:00', '2025-08-03 12:00:00', 900000, 'Pending', 'BK-005'),
+(6, 7, 6, NULL, '2025-08-03 13:00:00', '2025-08-05 13:00:00', 900000, 'Confirmed', 'BK-006'),
+(7, 8, 7, NULL, '2025-08-04 14:00:00', '2025-08-06 14:00:00', 1300000, 'Pending', 'BK-007');
+
+SET IDENTITY_INSERT Booking OFF;
