@@ -42,5 +42,11 @@ namespace AutoRental
             var profileWindow = new UserProfileWindow(_currentUser);
             profileWindow.ShowDialog();
         }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            var homeWindow = new HomeWindow();
+            homeWindow.ShowDialog();
+        }
     }
 }
