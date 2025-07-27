@@ -4,24 +4,7 @@
         xmlns:local="clr-namespace:AutoRental"
         Title="Danh sách xe" Height="700" Width="950" WindowStartupLocation="CenterScreen" Background="#f4f6fb" FontFamily="Segoe UI">
     <Window.Resources>
-        <Style TargetType="DataGrid">
-            <Setter Property="RowBackground" Value="#f9f9f9"/>
-            <Setter Property="AlternatingRowBackground" Value="#e3eaf2"/>
-            <Setter Property="BorderBrush" Value="#b0bec5"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Foreground" Value="#2d3a4a"/>
-            <Setter Property="Margin" Value="0,0,0,10"/>
-        </Style>
-        <Style TargetType="DataGridColumnHeader">
-            <Setter Property="Background" Value="#1976d2"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Height" Value="36"/>
-            <Setter Property="BorderThickness" Value="0,0,0,1"/>
-            <Setter Property="BorderBrush" Value="#1565c0"/>
-        </Style>
+        <local:MainCarImageConverter x:Key="MainCarImageConverter"/>
         <Style TargetType="Button">
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="FontSize" Value="14"/>
@@ -89,38 +72,41 @@
                         <ComboBox x:Name="cbBrand" Width="180" Margin="0,0,10,0"/>
                         <Button Content="Tìm kiếm" Width="100" Click="BtnSearch_Click"/>
                     </StackPanel>
-                    <DataGrid x:Name="dgCars" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0" IsReadOnly="True" SelectionMode="Single" MinHeight="400">
-                        <DataGrid.Columns>
-                            <DataGridTemplateColumn Header="Ảnh" Width="100">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Image Width="90" Height="60" Stretch="UniformToFill">
+                    <ItemsControl x:Name="icCars" ItemsSource="{Binding ElementName=dgCars, Path=ItemsSource}" HorizontalAlignment="Center">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel IsItemsHost="True" Orientation="Horizontal" HorizontalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="#f9f9f9" CornerRadius="16" Margin="18,18,0,0" Width="270" Padding="16" BorderBrush="#e0e0e0" BorderThickness="1">
+                                    <StackPanel>
+                                        <Image Width="220" Height="120" Stretch="UniformToFill" Margin="0,0,0,10">
                                             <Image.Source>
-                                                <Binding Path="CarImages">
-                                                    <Binding.Converter>
-                                                        <local:MainCarImageConverter />
-                                                    </Binding.Converter>
-                                                </Binding>
+                                                <Binding Path="CarImages" Converter="{StaticResource MainCarImageConverter}"/>
                                             </Image.Source>
                                         </Image>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTextColumn Header="Tên xe" Binding="{Binding CarModel}" Width="*"/>
-                            <DataGridTextColumn Header="Biển số" Binding="{Binding LicensePlate}" Width="120"/>
-                            <DataGridTextColumn Header="Hãng" Binding="{Binding Brand.BrandName}" Width="120"/>
-                            <DataGridTextColumn Header="Số chỗ" Binding="{Binding Seats}" Width="60"/>
-                            <DataGridTextColumn Header="Giá/ngày" Binding="{Binding PricePerDay}" Width="100"/>
-                            <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
-                            <DataGridTemplateColumn Header="">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Content="Đặt xe" Click="BookCar_Click"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
+                                        <TextBlock Text="{Binding CarModel}" FontWeight="Bold" FontSize="18" Margin="0,0,0,2"/>
+                                        <TextBlock Text="{Binding LicensePlate, StringFormat='Biển số: {0}'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding Brand.BrandName, StringFormat='Hãng: {0}'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding Seats, StringFormat='Số chỗ: {0}'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding PricePerDay, StringFormat='Giá thuê: {0:N0} VNĐ/ngày'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding Status, StringFormat='Trạng thái: {0}'}" FontSize="14"/>
+                                        <Button Content="Đặt xe" Margin="0,12,0,0" Height="36" Click="BookCar_Click"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <!-- DataGrid ẩn đi, chỉ dùng để binding dữ liệu -->
+                    <DataGrid x:Name="dgCars" Visibility="Collapsed"/>
+                    <!-- Phân trang -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,24,0,0" >
+                        <Button x:Name="btnPrevPage" Content="&lt;" Width="40" Height="32" Margin="8,0" Click="PrevPage_Click"/>
+                        <TextBlock x:Name="txtPageInfo" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" Margin="8,0"/>
+                        <Button x:Name="btnNextPage" Content="&gt;" Width="40" Height="32" Margin="8,0" Click="NextPage_Click"/>
+                    </StackPanel>
                 </StackPanel>
             </ScrollViewer>
         </Border>
