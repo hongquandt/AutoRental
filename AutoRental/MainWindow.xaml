@@ -7,6 +7,7 @@
         <Border Background="White" CornerRadius="14" Padding="32" Margin="20">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock x:Name="txtWelcome" FontSize="22" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,24" HorizontalAlignment="Center"/>
+                <Button x:Name="btnHome" Content="Xem gợi ý nên thuê xe hôm nay" Width="200" Height="40" Margin="0,0,0,10" Background="#2196f3" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="btnHome_Click"/>
                 <Button x:Name="btnViewProfile" Content="Xem thông tin cá nhân" Width="200" Height="40" Margin="0,0,0,10" Background="#673ab7" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="btnViewProfile_Click"/>
                 <Button x:Name="btnViewCars" Content="Xem danh sách xe" Width="200" Height="40" Margin="0,0,0,10" Background="#1976d2" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="btnViewCars_Click"/>
                 <Button x:Name="btnBookingHistory" Content="Lịch sử đặt xe" Width="200" Height="40" Margin="0,0,0,20" Background="#43a047" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="btnBookingHistory_Click"/>
