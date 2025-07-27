@@ -1,80 +1,24 @@
 <Window x:Class="AutoRental.CarBookingWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Đặt xe" Height="500" Width="400" WindowStartupLocation="CenterScreen">
-    <Window.Resources>
-        <!-- Style cho Button hiện đại, có hover -->
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="#1976d2"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Height" Value="38"/>
-            <Setter Property="Margin" Value="0,0,0,0"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="8" SnapsToDevicePixels="True" >
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#1565c0"/>
-                                <Setter Property="Effect">
-                                    <Setter.Value>
-                                        <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.18"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#0d47a1"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <!-- Style cho DatePicker -->
-        <Style TargetType="DatePicker">
-            <Setter Property="Height" Value="32"/>
-            <Setter Property="Padding" Value="8,2"/>
-            <Setter Property="BorderBrush" Value="#b0bec5"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Background" Value="#f9f9f9"/>
-            <Setter Property="Margin" Value="0,0,0,8"/>
-            <Setter Property="FontSize" Value="14"/>
-        </Style>
-    </Window.Resources>
+        Title="Đặt xe" Height="400" Width="400" WindowStartupLocation="CenterScreen">
     <Grid Background="#f4f6fb">
-        <Border Background="White" CornerRadius="16" Padding="28" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Border.Effect>
-                <DropShadowEffect BlurRadius="18" ShadowDepth="0" Opacity="0.13"/>
-            </Border.Effect>
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <StackPanel VerticalAlignment="Top">
-                    <!-- Logo AUTORENTAL -->
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                        <TextBlock Text="AUTO" FontWeight="Bold" FontSize="28" Foreground="#222"/>
-                        <TextBlock Text="RENTAL" FontWeight="Bold" FontSize="28" Foreground="#1de9b6" Margin="2,0,0,0"/>
-                    </StackPanel>
-                    <TextBlock Text="Đặt xe" FontSize="22" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,16" HorizontalAlignment="Center"/>
-                    <TextBlock Text="Tên xe:" FontWeight="SemiBold"/>
-                    <TextBlock x:Name="txtCarModel" Margin="0,0,0,8"/>
-                    <TextBlock Text="Biển số:" FontWeight="SemiBold"/>
-                    <TextBlock x:Name="txtLicensePlate" Margin="0,0,0,8"/>
-                    <TextBlock Text="Giá/ngày:" FontWeight="SemiBold"/>
-                    <TextBlock x:Name="txtPrice" Margin="0,0,0,16"/>
-                    <TextBlock Text="Ngày nhận xe:"/>
-                    <DatePicker x:Name="dpPickup"/>
-                    <TextBlock Text="Ngày trả xe:"/>
-                    <DatePicker x:Name="dpReturn" Margin="0,0,0,16"/>
-                    <TextBlock x:Name="txtError" Foreground="Red" FontSize="12" Margin="0,0,0,10" Visibility="Collapsed"/>
-                    <Button x:Name="btnBook" Content="Xác nhận đặt xe" Click="btnBook_Click" Margin="0,24,0,0"/>
-                </StackPanel>
-            </ScrollViewer>
+        <Border Background="White" CornerRadius="12" Padding="24" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Đặt xe" FontSize="22" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,16" HorizontalAlignment="Center"/>
+                <TextBlock Text="Tên xe:" FontWeight="SemiBold"/>
+                <TextBlock x:Name="txtCarModel" Margin="0,0,0,8"/>
+                <TextBlock Text="Biển số:" FontWeight="SemiBold"/>
+                <TextBlock x:Name="txtLicensePlate" Margin="0,0,0,8"/>
+                <TextBlock Text="Giá/ngày:" FontWeight="SemiBold"/>
+                <TextBlock x:Name="txtPrice" Margin="0,0,0,16"/>
+                <TextBlock Text="Ngày nhận xe:"/>
+                <DatePicker x:Name="dpPickup" Margin="0,0,0,8"/>
+                <TextBlock Text="Ngày trả xe:"/>
+                <DatePicker x:Name="dpReturn" Margin="0,0,0,16"/>
+                <TextBlock x:Name="txtError" Foreground="Red" FontSize="12" Margin="0,0,0,10" Visibility="Collapsed"/>
+                <Button x:Name="btnBook" Content="Xác nhận đặt xe" Height="38" Background="#1976d2" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="btnBook_Click"/>
+            </StackPanel>
         </Border>
     </Grid>
 </Window> 
