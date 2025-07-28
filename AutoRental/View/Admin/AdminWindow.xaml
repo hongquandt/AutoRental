@@ -124,6 +124,11 @@
                         Background="#4caf50" Style="{StaticResource ManagementButtonStyle}"
                         Command="{Binding ManageBookingsCommand}"/>
                 
+                <!-- Quản lý xe -->
+                <Button Content="Quản lý xe" 
+                        Background="#9c27b0" Style="{StaticResource ManagementButtonStyle}"
+                        Command="{Binding ManageCarsCommand}"/>
+                
                 <!-- Quản lý Voucher -->
                 <Button Content="Quản lý Voucher" 
                         Background="#ff9800" Style="{StaticResource ManagementButtonStyle}"

@@ -27,6 +27,7 @@ namespace AutoRental.ViewModels.Admin
             // Initialize Commands
             ManageUsersCommand = new RelayCommand(ManageUsers);
             ManageBookingsCommand = new RelayCommand(ManageBookings);
+            ManageCarsCommand = new RelayCommand(ManageCars);
             ManageVouchersCommand = new RelayCommand(ManageVouchers);
             LogoutCommand = new RelayCommand(Logout);
         }
@@ -34,6 +35,7 @@ namespace AutoRental.ViewModels.Admin
         // Commands
         public ICommand ManageUsersCommand { get; }
         public ICommand ManageBookingsCommand { get; }
+        public ICommand ManageCarsCommand { get; }
         public ICommand ManageVouchersCommand { get; }
         public ICommand LogoutCommand { get; }
 
@@ -51,6 +53,15 @@ namespace AutoRental.ViewModels.Admin
         {
             var bookingManagementWindow = new View.Admin.BookingManagementWindow();
             bookingManagementWindow.Show();
+
+            // Đóng AdminWindow chính xác
+            _adminWindow.Close();
+        }
+
+        private void ManageCars()
+        {
+            var carManagementWindow = new View.Admin.CarManagementWindow();
+            carManagementWindow.Show();
 
             // Đóng AdminWindow chính xác
             _adminWindow.Close();
