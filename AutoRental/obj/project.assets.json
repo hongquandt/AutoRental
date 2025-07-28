@@ -1158,7 +1158,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "BusinessObjects": "1.0.0"
+          "BusinessObjects": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
         },
         "compile": {
           "bin/placeholder/DataAccessObject.dll": {}
@@ -1171,6 +1173,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BusinessObjects": "1.0.0",
           "DataAccessObject": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
@@ -3185,6 +3188,10 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "BusinessObjects >= 1.0.0",
+      "DataAccessObject >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 9.0.7",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.7",
       "Newtonsoft.Json >= 13.0.3",
       "Service >= 1.0.0"
     ]
@@ -3196,11 +3203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Sem5-SU25\\PRN212\\Project\\AutoRental\\AutoRental\\AutoRental.csproj",
+      "projectUniqueName": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\AutoRental\\AutoRental.csproj",
       "projectName": "AutoRental",
-      "projectPath": "E:\\Sem5-SU25\\PRN212\\Project\\AutoRental\\AutoRental\\AutoRental.csproj",
+      "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\AutoRental\\AutoRental.csproj",
       "packagesPath": "C:\\Users\\long\\.nuget\\packages\\",
-      "outputPath": "E:\\Sem5-SU25\\PRN212\\Project\\AutoRental\\AutoRental\\obj\\",
+      "outputPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\AutoRental\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3221,8 +3228,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\Sem5-SU25\\PRN212\\Project\\AutoRental\\Service\\Service.csproj": {
-              "projectPath": "E:\\Sem5-SU25\\PRN212\\Project\\AutoRental\\Service\\Service.csproj"
+            "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {
+              "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\BusinessObjects.csproj"
+            },
+            "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\DataAccessObject\\DataAccessObject.csproj": {
+              "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\DataAccessObject\\DataAccessObject.csproj"
+            },
+            "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\Service\\Service.csproj": {
+              "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\Service\\Service.csproj"
             }
           }
         }
@@ -3243,6 +3256,14 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.7, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[9.0.7, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
