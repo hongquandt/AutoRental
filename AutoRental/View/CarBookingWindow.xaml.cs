@@ -2,11 +2,13 @@ using System.Windows;
 using BusinessObjects;
 using System;
 using System.Linq;
+using System.ComponentModel;
+using System.Windows.Controls;
 
 
 namespace AutoRental
 {
-    public partial class CarBookingWindow : Window
+    public partial class CarBookingWindow : Window, INotifyPropertyChanged
     {
         private readonly User _user;
         private readonly Car _car;
@@ -16,6 +18,7 @@ namespace AutoRental
             _user = user;
             _car = car;
             ShowCarInfo();
+            UpdateTotalAmount();
         }
 
         private void ShowCarInfo()
@@ -25,6 +28,36 @@ namespace AutoRental
             txtPrice.Text = _car.PricePerDay.ToString("N0") + " VNĐ";
             dpPickup.SelectedDate = DateTime.Today;
             dpReturn.SelectedDate = DateTime.Today.AddDays(1);
+        }
+
+        private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateTotalAmount();
+        }
+
+        private void UpdateTotalAmount()
+        {
+            txtError.Visibility = Visibility.Collapsed;
+            if (dpPickup.SelectedDate == null || dpReturn.SelectedDate == null)
+            {
+                txtTotal.Text = "";
+                return;
+            }
+            var pickup = dpPickup.SelectedDate.Value;
+            var ret = dpReturn.SelectedDate.Value;
+            if (pickup < DateTime.Today)
+            {
+                txtTotal.Text = "Ngày nhận không được nhỏ hơn hôm nay!";
+                return;
+            }
+            if (ret <= pickup)
+            {
+                txtTotal.Text = "Ngày trả phải sau ngày nhận!";
+                return;
+            }
+            var days = (ret - pickup).Days;
+            var total = days * _car.PricePerDay;
+            txtTotal.Text = $"Tổng tiền: {total:N0} VNĐ ({days} ngày)";
         }
 
         private void btnBook_Click(object sender, RoutedEventArgs e)
@@ -37,6 +70,11 @@ namespace AutoRental
             }
             var pickup = dpPickup.SelectedDate.Value;
             var ret = dpReturn.SelectedDate.Value;
+            if (pickup < DateTime.Today)
+            {
+                ShowError("Ngày nhận không được nhỏ hơn hôm nay!");
+                return;
+            }
             if (ret <= pickup)
             {
                 ShowError("Ngày trả xe phải sau ngày nhận xe!");
@@ -78,6 +116,12 @@ namespace AutoRental
         {
             txtError.Text = msg;
             txtError.Visibility = Visibility.Visible;
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged(string? name = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
     }
 } 

@@ -1,23 +1,10 @@
 <Window x:Class="AutoRental.CarListWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Danh sách xe" Height="600" Width="950" WindowStartupLocation="CenterScreen" Background="#f4f6fb" FontFamily="Segoe UI">
+        xmlns:local="clr-namespace:AutoRental"
+        Title="Danh sách xe" Height="700" Width="950" WindowStartupLocation="CenterScreen" Background="#f4f6fb" FontFamily="Segoe UI">
     <Window.Resources>
-        <Style TargetType="DataGrid">
-            <Setter Property="RowBackground" Value="#f9f9f9"/>
-            <Setter Property="AlternatingRowBackground" Value="#e3eaf2"/>
-            <Setter Property="BorderBrush" Value="#b0bec5"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Foreground" Value="#2d3a4a"/>
-        </Style>
-        <Style TargetType="DataGridColumnHeader">
-            <Setter Property="Background" Value="#1976d2"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Height" Value="36"/>
-        </Style>
+        <local:MainCarImageConverter x:Key="MainCarImageConverter"/>
         <Style TargetType="Button">
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="FontSize" Value="14"/>
@@ -27,35 +14,101 @@
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Padding" Value="10,4"/>
             <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="8" SnapsToDevicePixels="True" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1565c0"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.18"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#0d47a1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="BorderBrush" Value="#b0bec5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#f9f9f9"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="BorderBrush" Value="#b0bec5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#f9f9f9"/>
+            <Setter Property="FontSize" Value="14"/>
         </Style>
     </Window.Resources>
     <Grid>
-        <Border Background="White" CornerRadius="14" Padding="24" Margin="20">
-            <StackPanel>
-                <TextBlock Text="Danh sách xe" FontSize="26" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,18" HorizontalAlignment="Center"/>
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,16" HorizontalAlignment="Center">
-                    <TextBox x:Name="txtSearch" Width="220" Height="32" Margin="0,0,10,0" Padding="8" BorderBrush="#b0bec5" BorderThickness="1" Background="#f9f9f9" FontSize="14"/>
-                    <ComboBox x:Name="cbBrand" Width="180" Height="32" Margin="0,0,10,0" FontSize="14"/>
-                    <Button Content="Tìm kiếm" Height="32" Width="100" Background="#1976d2" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="BtnSearch_Click"/>
+        <Border Background="White" CornerRadius="20" Padding="28" Margin="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="18" ShadowDepth="0" Opacity="0.13"/>
+            </Border.Effect>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel VerticalAlignment="Top">
+                    <!-- Logo AUTORENTAL -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                        <TextBlock Text="AUTO" FontWeight="Bold" FontSize="28" Foreground="#222"/>
+                        <TextBlock Text="RENTAL" FontWeight="Bold" FontSize="28" Foreground="#1de9b6" Margin="2,0,0,0"/>
+                    </StackPanel>
+                    <TextBlock Text="Danh sách xe" FontSize="26" FontWeight="Bold" Foreground="#1976d2" Margin="0,0,0,18" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,24" HorizontalAlignment="Center">
+                        <TextBox x:Name="txtSearch" Width="220" Margin="0,0,10,0"/>
+                        <ComboBox x:Name="cbBrand" Width="180" Margin="0,0,10,0"/>
+                        <Button Content="Tìm kiếm" Width="100" Click="BtnSearch_Click"/>
+                    </StackPanel>
+                    <ItemsControl x:Name="icCars" ItemsSource="{Binding ElementName=dgCars, Path=ItemsSource}" HorizontalAlignment="Center">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel IsItemsHost="True" Orientation="Horizontal" HorizontalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="#f9f9f9" CornerRadius="16" Margin="18,18,0,0" Width="270" Padding="16" BorderBrush="#e0e0e0" BorderThickness="1">
+                                    <StackPanel>
+                                        <Image Width="220" Height="120" Stretch="UniformToFill" Margin="0,0,0,10">
+                                            <Image.Source>
+                                                <Binding Path="CarImages" Converter="{StaticResource MainCarImageConverter}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <TextBlock Text="{Binding CarModel}" FontWeight="Bold" FontSize="18" Margin="0,0,0,2"/>
+                                        <TextBlock Text="{Binding LicensePlate, StringFormat='Biển số: {0}'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding Brand.BrandName, StringFormat='Hãng: {0}'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding Seats, StringFormat='Số chỗ: {0}'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding PricePerDay, StringFormat='Giá thuê: {0:N0} VNĐ/ngày'}" FontSize="14"/>
+                                        <TextBlock Text="{Binding Status, StringFormat='Trạng thái: {0}'}" FontSize="14"/>
+                                        <Button Content="Đặt xe" Margin="0,12,0,0" Height="36" Click="BookCar_Click"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <!-- DataGrid ẩn đi, chỉ dùng để binding dữ liệu -->
+                    <DataGrid x:Name="dgCars" Visibility="Collapsed"/>
+                    <!-- Phân trang -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,24,0,0" >
+                        <Button x:Name="btnPrevPage" Content="&lt;" Width="40" Height="32" Margin="8,0" Click="PrevPage_Click"/>
+                        <TextBlock x:Name="txtPageInfo" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" Margin="8,0"/>
+                        <Button x:Name="btnNextPage" Content="&gt;" Width="40" Height="32" Margin="8,0" Click="NextPage_Click"/>
+                    </StackPanel>
                 </StackPanel>
-                <DataGrid x:Name="dgCars" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0" IsReadOnly="True" SelectionMode="Single" MinHeight="400">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Tên xe" Binding="{Binding CarModel}" Width="*"/>
-                        <DataGridTextColumn Header="Biển số" Binding="{Binding LicensePlate}" Width="120"/>
-                        <DataGridTextColumn Header="Hãng" Binding="{Binding Brand.BrandName}" Width="120"/>
-                        <DataGridTextColumn Header="Số chỗ" Binding="{Binding Seats}" Width="60"/>
-                        <DataGridTextColumn Header="Giá/ngày" Binding="{Binding PricePerDay}" Width="100"/>
-                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
-                        <DataGridTemplateColumn Header="">
-                            <DataGridTemplateColumn.CellTemplate>
-                                <DataTemplate>
-                                    <Button Content="Đặt xe" Click="BookCar_Click"/>
-                                </DataTemplate>
-                            </DataGridTemplateColumn.CellTemplate>
-                        </DataGridTemplateColumn>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </StackPanel>
+            </ScrollViewer>
         </Border>
     </Grid>
 </Window> 

@@ -9,7 +9,11 @@ namespace AutoRental
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return string.IsNullOrEmpty(value as string) ? Visibility.Collapsed : Visibility.Visible;
+            if (value is string stringValue)
+            {
+                return string.IsNullOrEmpty(stringValue) ? Visibility.Collapsed : Visibility.Visible;
+            }
+            return Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -17,4 +21,4 @@ namespace AutoRental
             throw new NotImplementedException();
         }
     }
-} 
+}

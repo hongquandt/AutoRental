@@ -5016,23 +5016,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hyper\\.nuget\\packages\\": {},
+    "C:\\Users\\long\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
+      "projectUniqueName": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
       "projectName": "BusinessObjects",
-      "projectPath": "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
-      "packagesPath": "C:\\Users\\hyper\\.nuget\\packages\\",
-      "outputPath": "L:\\Workspace\\C#\\AutoRental\\BusinessObject\\obj\\",
+      "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\BusinessObjects.csproj",
+      "packagesPath": "C:\\Users\\long\\.nuget\\packages\\",
+      "outputPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hyper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\long\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

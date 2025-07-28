@@ -1145,7 +1145,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "BusinessObjects": "1.0.0"
+          "BusinessObjects": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
         },
         "compile": {
           "bin/placeholder/DataAccessObject.dll": {}
@@ -3122,29 +3124,30 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BusinessObjects >= 1.0.0",
       "DataAccessObject >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hyper\\.nuget\\packages\\": {},
+    "C:\\Users\\long\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\Workspace\\C#\\AutoRental\\Service\\Service.csproj",
+      "projectUniqueName": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "L:\\Workspace\\C#\\AutoRental\\Service\\Service.csproj",
-      "packagesPath": "C:\\Users\\hyper\\.nuget\\packages\\",
-      "outputPath": "L:\\Workspace\\C#\\AutoRental\\Service\\obj\\",
+      "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\Service\\Service.csproj",
+      "packagesPath": "C:\\Users\\long\\.nuget\\packages\\",
+      "outputPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hyper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\long\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3159,8 +3162,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "L:\\Workspace\\C#\\AutoRental\\DataAccessObject\\DataAccessObject.csproj": {
-              "projectPath": "L:\\Workspace\\C#\\AutoRental\\DataAccessObject\\DataAccessObject.csproj"
+            "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\BusinessObjects.csproj": {
+              "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\BusinessObject\\BusinessObjects.csproj"
+            },
+            "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\DataAccessObject\\DataAccessObject.csproj": {
+              "projectPath": "E:\\Sem5-SU25\\PRN212\\Git\\AutoRental\\DataAccessObject\\DataAccessObject.csproj"
             }
           }
         }

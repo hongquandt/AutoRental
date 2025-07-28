@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-L:\Workspace\C#\AutoRental\AutoRental\obj\Debug\net8.0-windows\
+E:\Sem5-SU25\PRN212\Git\AutoRental\AutoRental\obj\Debug\net8.0-windows\
 AutoRental
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-L:\Workspace\C#\AutoRental\AutoRental\App.xaml
-131112657602
-
-28-656065440
-237-299446037
-MainWindow.xaml;View\Admin\AdminWindow.xaml;View\Admin\BookingManagementWindow.xaml;View\Admin\UserDialog.xaml;View\Admin\UserManagementWindow.xaml;View\Admin\VoucherDialog.xaml;View\Admin\VoucherManagementWindow.xaml;View\BookingHistoryWindow.xaml;View\CarBookingWindow.xaml;View\CarListWindow.xaml;View\LoginWindow.xaml;View\RegisterWindow.xaml;View\UserProfileWindow.xaml;
+E:\Sem5-SU25\PRN212\Git\AutoRental\AutoRental\App.xaml
+17-1569749926
+55803214487
+41-107882054
+2381871850607
+MainWindow.xaml;View\Admin\AdminWindow.xaml;View\Admin\BookingDialog.xaml;View\Admin\BookingManagementWindow.xaml;View\Admin\CarDialog.xaml;View\Admin\CarManagementWindow.xaml;View\Admin\UserDialog.xaml;View\Admin\UserManagementWindow.xaml;View\Admin\VoucherDialog.xaml;View\Admin\VoucherManagementWindow.xaml;View\BookingHistoryWindow.xaml;View\CarBookingWindow.xaml;View\CarListWindow.xaml;View\HomeWindow.xaml;View\LoginWindow.xaml;View\RegisterWindow.xaml;View\UserProfileWindow.xaml;
 
 True
 

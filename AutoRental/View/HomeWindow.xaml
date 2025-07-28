@@ -1,0 +1,88 @@
+<Window x:Class="AutoRental.View.HomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AutoRental"
+        Title="Trang chủ - Đề xuất xe" Height="540" Width="420" Background="#f4f6fb" FontFamily="Segoe UI">
+    <Window.Resources>
+        <local:MainCarImageConverter x:Key="MainCarImageConverter"/>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Background" Value="#1976d2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="8" SnapsToDevicePixels="True" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1565c0"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.18"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#0d47a1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Border Background="White" CornerRadius="20" Padding="28" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="18" ShadowDepth="0" Opacity="0.13"/>
+            </Border.Effect>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="340">
+                <!-- Tiêu đề + icon -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                    <TextBlock Text="🚗" FontSize="32" Margin="0,0,8,0"/>
+                    <TextBlock Text="Đề xuất xe hôm nay" FontSize="26" FontWeight="Bold" Foreground="#1976d2"/>
+                </StackPanel>
+                <!-- Ảnh xe -->
+                <Border Background="#f4f6fb" CornerRadius="12" Margin="0,0,0,12" Padding="8" Height="140" VerticalAlignment="Center">
+                    <Image Width="220" Height="120" Stretch="UniformToFill">
+                        <Image.Source>
+                            <Binding Path="SuggestedCar.CarImages" Converter="{StaticResource MainCarImageConverter}"/>
+                        </Image.Source>
+                    </Image>
+                </Border>
+                <!-- Thông tin xe -->
+                <TextBlock Text="{Binding SuggestedCar.CarModel}" FontSize="20" FontWeight="SemiBold" Margin="0,0,0,2"/>
+                <TextBlock Text="{Binding SuggestedCar.Seats, StringFormat='Số chỗ: {0}'}" FontSize="14"/>
+                <TextBlock Text="{Binding SuggestedCar.PricePerDay, StringFormat='Giá: {0:N0} VNĐ/ngày'}" FontSize="14"/>
+                <TextBlock Text="{Binding SuggestedCar.LicensePlate, StringFormat='Biển số: {0}'}" FontSize="14"/>
+                <!-- Thông tin thời tiết -->
+                <StackPanel Orientation="Horizontal" Margin="0,12,0,0" HorizontalAlignment="Center">
+                    <TextBlock Text="☀️" FontSize="18" Margin="0,0,4,0"/>
+                    <TextBlock Text="{Binding TodayWeather.Condition, StringFormat='Thời tiết: {0}'}" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="🌡️" FontSize="18" Margin="0,0,4,0"/>
+                    <TextBlock Text="{Binding TodayWeather.Temperature, StringFormat='Nhiệt độ: {0}°C'}" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="💧" FontSize="18" Margin="0,0,4,0"/>
+                    <TextBlock Text="{Binding TodayWeather.Humidity, StringFormat='Độ ẩm: {0}%'}" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="💨" FontSize="18" Margin="0,0,4,0"/>
+                    <TextBlock Text="{Binding TodayWeather.WindSpeed, StringFormat='Gió: {0} m/s'}" FontSize="14"/>
+                </StackPanel>
+                <TextBlock Text="{Binding TodayWeather.Description}" FontStyle="Italic" FontSize="13" Foreground="#888" HorizontalAlignment="Center"/>
+                <!-- Nút đặt xe -->
+                <Button Content="Đặt xe ngay" Width="180" Height="44" Margin="0,24,0,0" Click="BookCar_Click" FontSize="18"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window> 
