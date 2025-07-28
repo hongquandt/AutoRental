@@ -60,7 +60,7 @@ namespace AutoRental.View.Admin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AutoRental;component/view/admin/vouchermanagementwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AutoRental;V1.0.0.0;component/view/admin/vouchermanagementwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Admin\VoucherManagementWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
